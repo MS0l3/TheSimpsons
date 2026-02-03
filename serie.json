@@ -1,0 +1,3266 @@
+{
+    "temporadas": [
+        {
+            "temporada": 1,
+            "imagen": "SIMPSONS_TV_ART/Season_1_Icon.webp",
+            "capitulos": [
+                {
+                    "codigo": "1x01",
+                    "imagen": "SIMPSONS_TV_ART/1x01.webp"
+                },
+                {
+                    "codigo": "1x02",
+                    "imagen": "SIMPSONS_TV_ART/1x02.webp"
+                },
+                {
+                    "codigo": "1x03",
+                    "imagen": "SIMPSONS_TV_ART/1x03.webp"
+                },
+                {
+                    "codigo": "1x04",
+                    "imagen": "SIMPSONS_TV_ART/1x04.webp"
+                },
+                {
+                    "codigo": "1x05",
+                    "imagen": "SIMPSONS_TV_ART/1x05.webp"
+                },
+                {
+                    "codigo": "1x06",
+                    "imagen": "SIMPSONS_TV_ART/1x06.webp"
+                },
+                {
+                    "codigo": "1x07",
+                    "imagen": "SIMPSONS_TV_ART/1x07.webp"
+                },
+                {
+                    "codigo": "1x08",
+                    "imagen": "SIMPSONS_TV_ART/1x08.webp"
+                },
+                {
+                    "codigo": "1x09",
+                    "imagen": "SIMPSONS_TV_ART/1x09.webp"
+                },
+                {
+                    "codigo": "1x10",
+                    "imagen": "SIMPSONS_TV_ART/1x10.webp"
+                },
+                {
+                    "codigo": "1x11",
+                    "imagen": "SIMPSONS_TV_ART/1x11.webp"
+                },
+                {
+                    "codigo": "1x12",
+                    "imagen": "SIMPSONS_TV_ART/1x12.webp"
+                },
+                {
+                    "codigo": "1x13",
+                    "imagen": "SIMPSONS_TV_ART/1x13.webp"
+                }
+            ]
+        },
+        {
+            "temporada": 2,
+            "imagen": "SIMPSONS_TV_ART/Season_2_Icon.webp",
+            "capitulos": [
+                {
+                    "codigo": "2x01",
+                    "imagen": "SIMPSONS_TV_ART/2x01.webp"
+                },
+                {
+                    "codigo": "2x02",
+                    "imagen": "SIMPSONS_TV_ART/2x02.webp"
+                },
+                {
+                    "codigo": "2x03",
+                    "imagen": "SIMPSONS_TV_ART/2x03.webp"
+                },
+                {
+                    "codigo": "2x04",
+                    "imagen": "SIMPSONS_TV_ART/2x04.webp"
+                },
+                {
+                    "codigo": "2x05",
+                    "imagen": "SIMPSONS_TV_ART/2x05.webp"
+                },
+                {
+                    "codigo": "2x06",
+                    "imagen": "SIMPSONS_TV_ART/2x06.webp"
+                },
+                {
+                    "codigo": "2x07",
+                    "imagen": "SIMPSONS_TV_ART/2x07.webp"
+                },
+                {
+                    "codigo": "2x08",
+                    "imagen": "SIMPSONS_TV_ART/2x08.webp"
+                },
+                {
+                    "codigo": "2x09",
+                    "imagen": "SIMPSONS_TV_ART/2x09.webp"
+                },
+                {
+                    "codigo": "2x10",
+                    "imagen": "SIMPSONS_TV_ART/2x10.webp"
+                },
+                {
+                    "codigo": "2x11",
+                    "imagen": "SIMPSONS_TV_ART/2x11.webp"
+                },
+                {
+                    "codigo": "2x12",
+                    "imagen": "SIMPSONS_TV_ART/2x12.webp"
+                },
+                {
+                    "codigo": "2x13",
+                    "imagen": "SIMPSONS_TV_ART/2x13.webp"
+                },
+                {
+                    "codigo": "2x14",
+                    "imagen": "SIMPSONS_TV_ART/2x14.webp"
+                },
+                {
+                    "codigo": "2x15",
+                    "imagen": "SIMPSONS_TV_ART/2x15.webp"
+                },
+                {
+                    "codigo": "2x16",
+                    "imagen": "SIMPSONS_TV_ART/2x16.webp"
+                },
+                {
+                    "codigo": "2x17",
+                    "imagen": "SIMPSONS_TV_ART/2x17.webp"
+                },
+                {
+                    "codigo": "2x18",
+                    "imagen": "SIMPSONS_TV_ART/2x18.webp"
+                },
+                {
+                    "codigo": "2x19",
+                    "imagen": "SIMPSONS_TV_ART/2x19.webp"
+                },
+                {
+                    "codigo": "2x20",
+                    "imagen": "SIMPSONS_TV_ART/2x20.webp"
+                },
+                {
+                    "codigo": "2x21",
+                    "imagen": "SIMPSONS_TV_ART/2x21.webp"
+                },
+                {
+                    "codigo": "2x22",
+                    "imagen": "SIMPSONS_TV_ART/2x22.webp"
+                }
+            ]
+        },
+        {
+            "temporada": 3,
+            "imagen": "SIMPSONS_TV_ART/Season_3_Icon.webp",
+            "capitulos": [
+                {
+                    "codigo": "3x01",
+                    "imagen": "SIMPSONS_TV_ART/3x01.webp"
+                },
+                {
+                    "codigo": "3x02",
+                    "imagen": "SIMPSONS_TV_ART/3x02.webp"
+                },
+                {
+                    "codigo": "3x03",
+                    "imagen": "SIMPSONS_TV_ART/3x03.webp"
+                },
+                {
+                    "codigo": "3x04",
+                    "imagen": "SIMPSONS_TV_ART/3x04.webp"
+                },
+                {
+                    "codigo": "3x05",
+                    "imagen": "SIMPSONS_TV_ART/3x05.webp"
+                },
+                {
+                    "codigo": "3x06",
+                    "imagen": "SIMPSONS_TV_ART/3x06.webp"
+                },
+                {
+                    "codigo": "3x07",
+                    "imagen": "SIMPSONS_TV_ART/3x07.webp"
+                },
+                {
+                    "codigo": "3x08",
+                    "imagen": "SIMPSONS_TV_ART/3x08.webp"
+                },
+                {
+                    "codigo": "3x09",
+                    "imagen": "SIMPSONS_TV_ART/3x09.webp"
+                },
+                {
+                    "codigo": "3x10",
+                    "imagen": "SIMPSONS_TV_ART/3x10.webp"
+                },
+                {
+                    "codigo": "3x11",
+                    "imagen": "SIMPSONS_TV_ART/3x11.webp"
+                },
+                {
+                    "codigo": "3x12",
+                    "imagen": "SIMPSONS_TV_ART/3x12.webp"
+                },
+                {
+                    "codigo": "3x13",
+                    "imagen": "SIMPSONS_TV_ART/3x13.webp"
+                },
+                {
+                    "codigo": "3x14",
+                    "imagen": "SIMPSONS_TV_ART/3x14.webp"
+                },
+                {
+                    "codigo": "3x15",
+                    "imagen": "SIMPSONS_TV_ART/3x15.webp"
+                },
+                {
+                    "codigo": "3x16",
+                    "imagen": "SIMPSONS_TV_ART/3x16.webp"
+                },
+                {
+                    "codigo": "3x17",
+                    "imagen": "SIMPSONS_TV_ART/3x17.webp"
+                },
+                {
+                    "codigo": "3x18",
+                    "imagen": "SIMPSONS_TV_ART/3x18.webp"
+                },
+                {
+                    "codigo": "3x19",
+                    "imagen": "SIMPSONS_TV_ART/3x19.webp"
+                },
+                {
+                    "codigo": "3x20",
+                    "imagen": "SIMPSONS_TV_ART/3x20.webp"
+                },
+                {
+                    "codigo": "3x21",
+                    "imagen": "SIMPSONS_TV_ART/3x21.webp"
+                },
+                {
+                    "codigo": "3x22",
+                    "imagen": "SIMPSONS_TV_ART/3x22.webp"
+                },
+                {
+                    "codigo": "3x23",
+                    "imagen": "SIMPSONS_TV_ART/3x23.webp"
+                }
+            ]
+        },
+        {
+            "temporada": 4,
+            "imagen": "SIMPSONS_TV_ART/Season_4_Icon.webp",
+            "capitulos": [
+                {
+                    "codigo": "4x01",
+                    "imagen": "SIMPSONS_TV_ART/4x01.webp"
+                },
+                {
+                    "codigo": "4x02",
+                    "imagen": "SIMPSONS_TV_ART/4x02.webp"
+                },
+                {
+                    "codigo": "4x03",
+                    "imagen": "SIMPSONS_TV_ART/4x03.webp"
+                },
+                {
+                    "codigo": "4x04",
+                    "imagen": "SIMPSONS_TV_ART/4x04.webp"
+                },
+                {
+                    "codigo": "4x05",
+                    "imagen": "SIMPSONS_TV_ART/4x05.webp"
+                },
+                {
+                    "codigo": "4x06",
+                    "imagen": "SIMPSONS_TV_ART/4x06.webp"
+                },
+                {
+                    "codigo": "4x07",
+                    "imagen": "SIMPSONS_TV_ART/4x07.webp"
+                },
+                {
+                    "codigo": "4x08",
+                    "imagen": "SIMPSONS_TV_ART/4x08.webp"
+                },
+                {
+                    "codigo": "4x09",
+                    "imagen": "SIMPSONS_TV_ART/4x09.webp"
+                },
+                {
+                    "codigo": "4x10",
+                    "imagen": "SIMPSONS_TV_ART/4x10.webp"
+                },
+                {
+                    "codigo": "4x11",
+                    "imagen": "SIMPSONS_TV_ART/4x11.webp"
+                },
+                {
+                    "codigo": "4x12",
+                    "imagen": "SIMPSONS_TV_ART/4x12.webp"
+                },
+                {
+                    "codigo": "4x13",
+                    "imagen": "SIMPSONS_TV_ART/4x13.webp"
+                },
+                {
+                    "codigo": "4x14",
+                    "imagen": "SIMPSONS_TV_ART/4x14.webp"
+                },
+                {
+                    "codigo": "4x15",
+                    "imagen": "SIMPSONS_TV_ART/4x15.webp"
+                },
+                {
+                    "codigo": "4x16",
+                    "imagen": "SIMPSONS_TV_ART/4x16.webp"
+                },
+                {
+                    "codigo": "4x17",
+                    "imagen": "SIMPSONS_TV_ART/4x17.webp"
+                },
+                {
+                    "codigo": "4x18",
+                    "imagen": "SIMPSONS_TV_ART/4x18.webp"
+                },
+                {
+                    "codigo": "4x19",
+                    "imagen": "SIMPSONS_TV_ART/4x19.webp"
+                },
+                {
+                    "codigo": "4x20",
+                    "imagen": "SIMPSONS_TV_ART/4x20.webp"
+                },
+                {
+                    "codigo": "4x21",
+                    "imagen": "SIMPSONS_TV_ART/4x21.webp"
+                },
+                {
+                    "codigo": "4x22",
+                    "imagen": "SIMPSONS_TV_ART/4x22.webp"
+                }
+            ]
+        },
+        {
+            "temporada": 5,
+            "imagen": "SIMPSONS_TV_ART/Season_5_Icon.webp",
+            "capitulos": [
+                {
+                    "codigo": "5x01",
+                    "imagen": "SIMPSONS_TV_ART/5x01.webp"
+                },
+                {
+                    "codigo": "5x02",
+                    "imagen": "SIMPSONS_TV_ART/5x02.webp"
+                },
+                {
+                    "codigo": "5x03",
+                    "imagen": "SIMPSONS_TV_ART/5x03.webp"
+                },
+                {
+                    "codigo": "5x04",
+                    "imagen": "SIMPSONS_TV_ART/5x04.webp"
+                },
+                {
+                    "codigo": "5x05",
+                    "imagen": "SIMPSONS_TV_ART/5x05.webp"
+                },
+                {
+                    "codigo": "5x06",
+                    "imagen": "SIMPSONS_TV_ART/5x06.webp"
+                },
+                {
+                    "codigo": "5x07",
+                    "imagen": "SIMPSONS_TV_ART/5x07.webp"
+                },
+                {
+                    "codigo": "5x08",
+                    "imagen": "SIMPSONS_TV_ART/5x08.webp"
+                },
+                {
+                    "codigo": "5x09",
+                    "imagen": "SIMPSONS_TV_ART/5x09.webp"
+                },
+                {
+                    "codigo": "5x10",
+                    "imagen": "SIMPSONS_TV_ART/5x10.webp"
+                },
+                {
+                    "codigo": "5x11",
+                    "imagen": "SIMPSONS_TV_ART/5x11.webp"
+                },
+                {
+                    "codigo": "5x12",
+                    "imagen": "SIMPSONS_TV_ART/5x12.webp"
+                },
+                {
+                    "codigo": "5x13",
+                    "imagen": "SIMPSONS_TV_ART/5x13.webp"
+                },
+                {
+                    "codigo": "5x14",
+                    "imagen": "SIMPSONS_TV_ART/5x14.webp"
+                },
+                {
+                    "codigo": "5x16",
+                    "imagen": "SIMPSONS_TV_ART/5x16.webp"
+                },
+                {
+                    "codigo": "5x17",
+                    "imagen": "SIMPSONS_TV_ART/5x17.webp"
+                },
+                {
+                    "codigo": "5x18",
+                    "imagen": "SIMPSONS_TV_ART/5x18.webp"
+                },
+                {
+                    "codigo": "5x19",
+                    "imagen": "SIMPSONS_TV_ART/5x19.webp"
+                },
+                {
+                    "codigo": "5x20",
+                    "imagen": "SIMPSONS_TV_ART/5x20.webp"
+                },
+                {
+                    "codigo": "5x21",
+                    "imagen": "SIMPSONS_TV_ART/5x21.webp"
+                },
+                {
+                    "codigo": "5x22",
+                    "imagen": "SIMPSONS_TV_ART/5x22.webp"
+                }
+            ]
+        },
+        {
+            "temporada": 6,
+            "imagen": "SIMPSONS_TV_ART/Season_6_Icon.webp",
+            "capitulos": [
+                {
+                    "codigo": "6x01",
+                    "imagen": "SIMPSONS_TV_ART/6x01.webp"
+                },
+                {
+                    "codigo": "6x02",
+                    "imagen": "SIMPSONS_TV_ART/6x02.webp"
+                },
+                {
+                    "codigo": "6x03",
+                    "imagen": "SIMPSONS_TV_ART/6x03.webp"
+                },
+                {
+                    "codigo": "6x04",
+                    "imagen": "SIMPSONS_TV_ART/6x04.webp"
+                },
+                {
+                    "codigo": "6x05",
+                    "imagen": "SIMPSONS_TV_ART/6x05.webp"
+                },
+                {
+                    "codigo": "6x06",
+                    "imagen": "SIMPSONS_TV_ART/6x06.webp"
+                },
+                {
+                    "codigo": "6x07",
+                    "imagen": "SIMPSONS_TV_ART/6x07.webp"
+                },
+                {
+                    "codigo": "6x08",
+                    "imagen": "SIMPSONS_TV_ART/6x08.webp"
+                },
+                {
+                    "codigo": "6x09",
+                    "imagen": "SIMPSONS_TV_ART/6x09.webp"
+                },
+                {
+                    "codigo": "6x10",
+                    "imagen": "SIMPSONS_TV_ART/6x10.webp"
+                },
+                {
+                    "codigo": "6x11",
+                    "imagen": "SIMPSONS_TV_ART/6x11.webp"
+                },
+                {
+                    "codigo": "6x12",
+                    "imagen": "SIMPSONS_TV_ART/6x12.webp"
+                },
+                {
+                    "codigo": "6x13",
+                    "imagen": "SIMPSONS_TV_ART/6x13.webp"
+                },
+                {
+                    "codigo": "6x14",
+                    "imagen": "SIMPSONS_TV_ART/6x14.webp"
+                },
+                {
+                    "codigo": "6x15",
+                    "imagen": "SIMPSONS_TV_ART/6x15.webp"
+                },
+                {
+                    "codigo": "6x16",
+                    "imagen": "SIMPSONS_TV_ART/6x16.webp"
+                },
+                {
+                    "codigo": "6x17",
+                    "imagen": "SIMPSONS_TV_ART/6x17.webp"
+                },
+                {
+                    "codigo": "6x18",
+                    "imagen": "SIMPSONS_TV_ART/6x18.webp"
+                },
+                {
+                    "codigo": "6x19",
+                    "imagen": "SIMPSONS_TV_ART/6x19.webp"
+                },
+                {
+                    "codigo": "6x20",
+                    "imagen": "SIMPSONS_TV_ART/6x20.webp"
+                },
+                {
+                    "codigo": "6x21",
+                    "imagen": "SIMPSONS_TV_ART/6x21.webp"
+                },
+                {
+                    "codigo": "6x22",
+                    "imagen": "SIMPSONS_TV_ART/6x22.webp"
+                },
+                {
+                    "codigo": "6x23",
+                    "imagen": "SIMPSONS_TV_ART/6x23.webp"
+                },
+                {
+                    "codigo": "6x24",
+                    "imagen": "SIMPSONS_TV_ART/6x24.webp"
+                },
+                {
+                    "codigo": "6x25",
+                    "imagen": "SIMPSONS_TV_ART/6x25.webp"
+                }
+            ]
+        },
+        {
+            "temporada": 7,
+            "imagen": "SIMPSONS_TV_ART/Season_7_Icon.webp",
+            "capitulos": [
+                {
+                    "codigo": "7x01",
+                    "imagen": "SIMPSONS_TV_ART/7x01.webp"
+                },
+                {
+                    "codigo": "7x02",
+                    "imagen": "SIMPSONS_TV_ART/7x02.webp"
+                },
+                {
+                    "codigo": "7x03",
+                    "imagen": "SIMPSONS_TV_ART/7x03.webp"
+                },
+                {
+                    "codigo": "7x04",
+                    "imagen": "SIMPSONS_TV_ART/7x04.webp"
+                },
+                {
+                    "codigo": "7x05",
+                    "imagen": "SIMPSONS_TV_ART/7x05.webp"
+                },
+                {
+                    "codigo": "7x06",
+                    "imagen": "SIMPSONS_TV_ART/7x06.webp"
+                },
+                {
+                    "codigo": "7x07",
+                    "imagen": "SIMPSONS_TV_ART/7x07.webp"
+                },
+                {
+                    "codigo": "7x08",
+                    "imagen": "SIMPSONS_TV_ART/7x08.webp"
+                },
+                {
+                    "codigo": "7x09",
+                    "imagen": "SIMPSONS_TV_ART/7x09.webp"
+                },
+                {
+                    "codigo": "7x10",
+                    "imagen": "SIMPSONS_TV_ART/7x10.webp"
+                },
+                {
+                    "codigo": "7x11",
+                    "imagen": "SIMPSONS_TV_ART/7x11.webp"
+                },
+                {
+                    "codigo": "7x12",
+                    "imagen": "SIMPSONS_TV_ART/7x12.webp"
+                },
+                {
+                    "codigo": "7x13",
+                    "imagen": "SIMPSONS_TV_ART/7x13.webp"
+                },
+                {
+                    "codigo": "7x14",
+                    "imagen": "SIMPSONS_TV_ART/7x14.webp"
+                },
+                {
+                    "codigo": "7x15",
+                    "imagen": "SIMPSONS_TV_ART/7x15.webp"
+                },
+                {
+                    "codigo": "7x16",
+                    "imagen": "SIMPSONS_TV_ART/7x16.webp"
+                },
+                {
+                    "codigo": "7x17",
+                    "imagen": "SIMPSONS_TV_ART/7x17.webp"
+                },
+                {
+                    "codigo": "7x18",
+                    "imagen": "SIMPSONS_TV_ART/7x18.webp"
+                },
+                {
+                    "codigo": "7x19",
+                    "imagen": "SIMPSONS_TV_ART/7x19.webp"
+                },
+                {
+                    "codigo": "7x20",
+                    "imagen": "SIMPSONS_TV_ART/7x20.webp"
+                },
+                {
+                    "codigo": "7x21",
+                    "imagen": "SIMPSONS_TV_ART/7x21.webp"
+                },
+                {
+                    "codigo": "7x22",
+                    "imagen": "SIMPSONS_TV_ART/7x22.webp"
+                },
+                {
+                    "codigo": "7x23",
+                    "imagen": "SIMPSONS_TV_ART/7x23.webp"
+                },
+                {
+                    "codigo": "7x24",
+                    "imagen": "SIMPSONS_TV_ART/7x24.webp"
+                },
+                {
+                    "codigo": "7x25",
+                    "imagen": "SIMPSONS_TV_ART/7x25.webp"
+                }
+            ]
+        },
+        {
+            "temporada": 8,
+            "imagen": "SIMPSONS_TV_ART/Season_8_Icon.webp",
+            "capitulos": [
+                {
+                    "codigo": "8x01",
+                    "imagen": "SIMPSONS_TV_ART/8x01.webp"
+                },
+                {
+                    "codigo": "8x02",
+                    "imagen": "SIMPSONS_TV_ART/8x02.webp"
+                },
+                {
+                    "codigo": "8x03",
+                    "imagen": "SIMPSONS_TV_ART/8x03.webp"
+                },
+                {
+                    "codigo": "8x04",
+                    "imagen": "SIMPSONS_TV_ART/8x04.webp"
+                },
+                {
+                    "codigo": "8x05",
+                    "imagen": "SIMPSONS_TV_ART/8x05.webp"
+                },
+                {
+                    "codigo": "8x06",
+                    "imagen": "SIMPSONS_TV_ART/8x06.webp"
+                },
+                {
+                    "codigo": "8x07",
+                    "imagen": "SIMPSONS_TV_ART/8x07.webp"
+                },
+                {
+                    "codigo": "8x08",
+                    "imagen": "SIMPSONS_TV_ART/8x08.webp"
+                },
+                {
+                    "codigo": "8x09",
+                    "imagen": "SIMPSONS_TV_ART/8x09.webp"
+                },
+                {
+                    "codigo": "8x10",
+                    "imagen": "SIMPSONS_TV_ART/8x10.webp"
+                },
+                {
+                    "codigo": "8x11",
+                    "imagen": "SIMPSONS_TV_ART/8x11.webp"
+                },
+                {
+                    "codigo": "8x12",
+                    "imagen": "SIMPSONS_TV_ART/8x12.webp"
+                },
+                {
+                    "codigo": "8x13",
+                    "imagen": "SIMPSONS_TV_ART/8x13.webp"
+                },
+                {
+                    "codigo": "8x14",
+                    "imagen": "SIMPSONS_TV_ART/8x14.webp"
+                },
+                {
+                    "codigo": "8x15",
+                    "imagen": "SIMPSONS_TV_ART/8x15.webp"
+                },
+                {
+                    "codigo": "8x16",
+                    "imagen": "SIMPSONS_TV_ART/8x16.webp"
+                },
+                {
+                    "codigo": "8x17",
+                    "imagen": "SIMPSONS_TV_ART/8x17.webp"
+                },
+                {
+                    "codigo": "8x18",
+                    "imagen": "SIMPSONS_TV_ART/8x18.webp"
+                },
+                {
+                    "codigo": "8x19",
+                    "imagen": "SIMPSONS_TV_ART/8x19.webp"
+                },
+                {
+                    "codigo": "8x20",
+                    "imagen": "SIMPSONS_TV_ART/8x20.webp"
+                },
+                {
+                    "codigo": "8x21",
+                    "imagen": "SIMPSONS_TV_ART/8x21.webp"
+                },
+                {
+                    "codigo": "8x22",
+                    "imagen": "SIMPSONS_TV_ART/8x22.webp"
+                },
+                {
+                    "codigo": "8x23",
+                    "imagen": "SIMPSONS_TV_ART/8x23.webp"
+                },
+                {
+                    "codigo": "8x24",
+                    "imagen": "SIMPSONS_TV_ART/8x24.webp"
+                },
+                {
+                    "codigo": "8x25",
+                    "imagen": "SIMPSONS_TV_ART/8x25.webp"
+                }
+            ]
+        },
+        {
+            "temporada": 9,
+            "imagen": "SIMPSONS_TV_ART/Season_9_Icon.webp",
+            "capitulos": [
+                {
+                    "codigo": "9x01",
+                    "imagen": "SIMPSONS_TV_ART/9x01.webp"
+                },
+                {
+                    "codigo": "9x02",
+                    "imagen": "SIMPSONS_TV_ART/9x02.webp"
+                },
+                {
+                    "codigo": "9x03",
+                    "imagen": "SIMPSONS_TV_ART/9x03.webp"
+                },
+                {
+                    "codigo": "9x04",
+                    "imagen": "SIMPSONS_TV_ART/9x04.webp"
+                },
+                {
+                    "codigo": "9x05",
+                    "imagen": "SIMPSONS_TV_ART/9x05.webp"
+                },
+                {
+                    "codigo": "9x06",
+                    "imagen": "SIMPSONS_TV_ART/9x06.webp"
+                },
+                {
+                    "codigo": "9x07",
+                    "imagen": "SIMPSONS_TV_ART/9x07.webp"
+                },
+                {
+                    "codigo": "9x09",
+                    "imagen": "SIMPSONS_TV_ART/9x09.webp"
+                },
+                {
+                    "codigo": "9x10",
+                    "imagen": "SIMPSONS_TV_ART/9x10.webp"
+                },
+                {
+                    "codigo": "9x11",
+                    "imagen": "SIMPSONS_TV_ART/9x11.webp"
+                },
+                {
+                    "codigo": "9x12",
+                    "imagen": "SIMPSONS_TV_ART/9x12.webp"
+                },
+                {
+                    "codigo": "9x13",
+                    "imagen": "SIMPSONS_TV_ART/9x13.webp"
+                },
+                {
+                    "codigo": "9x14",
+                    "imagen": "SIMPSONS_TV_ART/9x14.webp"
+                },
+                {
+                    "codigo": "9x15",
+                    "imagen": "SIMPSONS_TV_ART/9x15.webp"
+                },
+                {
+                    "codigo": "9x16",
+                    "imagen": "SIMPSONS_TV_ART/9x16.webp"
+                },
+                {
+                    "codigo": "9x17",
+                    "imagen": "SIMPSONS_TV_ART/9x17.webp"
+                },
+                {
+                    "codigo": "9x18",
+                    "imagen": "SIMPSONS_TV_ART/9x18.webp"
+                },
+                {
+                    "codigo": "9x19",
+                    "imagen": "SIMPSONS_TV_ART/9x19.webp"
+                },
+                {
+                    "codigo": "9x20",
+                    "imagen": "SIMPSONS_TV_ART/9x20.webp"
+                },
+                {
+                    "codigo": "9x21",
+                    "imagen": "SIMPSONS_TV_ART/9x21.webp"
+                },
+                {
+                    "codigo": "9x22",
+                    "imagen": "SIMPSONS_TV_ART/9x22.webp"
+                },
+                {
+                    "codigo": "9x23",
+                    "imagen": "SIMPSONS_TV_ART/9x23.webp"
+                },
+                {
+                    "codigo": "9x24",
+                    "imagen": "SIMPSONS_TV_ART/9x24.webp"
+                },
+                {
+                    "codigo": "9x25",
+                    "imagen": "SIMPSONS_TV_ART/9x25.webp"
+                }
+            ]
+        },
+        {
+            "temporada": 10,
+            "imagen": "SIMPSONS_TV_ART/Season_10_Icon.webp",
+            "capitulos": [
+                {
+                    "codigo": "10x01",
+                    "imagen": "SIMPSONS_TV_ART/10x01.webp"
+                },
+                {
+                    "codigo": "10x02",
+                    "imagen": "SIMPSONS_TV_ART/10x02.webp"
+                },
+                {
+                    "codigo": "10x03",
+                    "imagen": "SIMPSONS_TV_ART/10x03.webp"
+                },
+                {
+                    "codigo": "10x04",
+                    "imagen": "SIMPSONS_TV_ART/10x04.webp"
+                },
+                {
+                    "codigo": "10x05",
+                    "imagen": "SIMPSONS_TV_ART/10x05.webp"
+                },
+                {
+                    "codigo": "10x06",
+                    "imagen": "SIMPSONS_TV_ART/10x06.webp"
+                },
+                {
+                    "codigo": "10x07",
+                    "imagen": "SIMPSONS_TV_ART/10x07.webp"
+                },
+                {
+                    "codigo": "10x08",
+                    "imagen": "SIMPSONS_TV_ART/10x08.webp"
+                },
+                {
+                    "codigo": "10x09",
+                    "imagen": "SIMPSONS_TV_ART/10x09.webp"
+                },
+                {
+                    "codigo": "10x10",
+                    "imagen": "SIMPSONS_TV_ART/10x10.webp"
+                },
+                {
+                    "codigo": "10x11",
+                    "imagen": "SIMPSONS_TV_ART/10x11.webp"
+                },
+                {
+                    "codigo": "10x12",
+                    "imagen": "SIMPSONS_TV_ART/10x12.webp"
+                },
+                {
+                    "codigo": "10x13",
+                    "imagen": "SIMPSONS_TV_ART/10x13.webp"
+                },
+                {
+                    "codigo": "10x14",
+                    "imagen": "SIMPSONS_TV_ART/10x14.webp"
+                },
+                {
+                    "codigo": "10x15",
+                    "imagen": "SIMPSONS_TV_ART/10x15.webp"
+                },
+                {
+                    "codigo": "10x16",
+                    "imagen": "SIMPSONS_TV_ART/10x16.webp"
+                },
+                {
+                    "codigo": "10x17",
+                    "imagen": "SIMPSONS_TV_ART/10x17.webp"
+                },
+                {
+                    "codigo": "10x18",
+                    "imagen": "SIMPSONS_TV_ART/10x18.webp"
+                },
+                {
+                    "codigo": "10x19",
+                    "imagen": "SIMPSONS_TV_ART/10x19.webp"
+                },
+                {
+                    "codigo": "10x20",
+                    "imagen": "SIMPSONS_TV_ART/10x20.webp"
+                },
+                {
+                    "codigo": "10x21",
+                    "imagen": "SIMPSONS_TV_ART/10x21.webp"
+                },
+                {
+                    "codigo": "10x22",
+                    "imagen": "SIMPSONS_TV_ART/10x22.webp"
+                },
+                {
+                    "codigo": "10x23",
+                    "imagen": "SIMPSONS_TV_ART/10x23.webp"
+                }
+            ]
+        },
+        {
+            "temporada": 11,
+            "imagen": "SIMPSONS_TV_ART/Season_11_Icon.webp",
+            "capitulos": [
+                {
+                    "codigo": "11x01",
+                    "imagen": "SIMPSONS_TV_ART/11x01.webp"
+                },
+                {
+                    "codigo": "11x02",
+                    "imagen": "SIMPSONS_TV_ART/11x02.webp"
+                },
+                {
+                    "codigo": "11x03",
+                    "imagen": "SIMPSONS_TV_ART/11x03.webp"
+                },
+                {
+                    "codigo": "11x04",
+                    "imagen": "SIMPSONS_TV_ART/11x04.webp"
+                },
+                {
+                    "codigo": "11x05",
+                    "imagen": "SIMPSONS_TV_ART/11x05.webp"
+                },
+                {
+                    "codigo": "11x06",
+                    "imagen": "SIMPSONS_TV_ART/11x06.webp"
+                },
+                {
+                    "codigo": "11x07",
+                    "imagen": "SIMPSONS_TV_ART/11x07.webp"
+                },
+                {
+                    "codigo": "11x08",
+                    "imagen": "SIMPSONS_TV_ART/11x08.webp"
+                },
+                {
+                    "codigo": "11x09",
+                    "imagen": "SIMPSONS_TV_ART/11x09.webp"
+                },
+                {
+                    "codigo": "11x10",
+                    "imagen": "SIMPSONS_TV_ART/11x10.webp"
+                },
+                {
+                    "codigo": "11x11",
+                    "imagen": "SIMPSONS_TV_ART/11x11.webp"
+                },
+                {
+                    "codigo": "11x12",
+                    "imagen": "SIMPSONS_TV_ART/11x12.webp"
+                },
+                {
+                    "codigo": "11x13",
+                    "imagen": "SIMPSONS_TV_ART/11x13.webp"
+                },
+                {
+                    "codigo": "11x14",
+                    "imagen": "SIMPSONS_TV_ART/11x14.webp"
+                },
+                {
+                    "codigo": "11x15",
+                    "imagen": "SIMPSONS_TV_ART/11x15.webp"
+                },
+                {
+                    "codigo": "11x16",
+                    "imagen": "SIMPSONS_TV_ART/11x16.webp"
+                },
+                {
+                    "codigo": "11x17",
+                    "imagen": "SIMPSONS_TV_ART/11x17.webp"
+                },
+                {
+                    "codigo": "11x18",
+                    "imagen": "SIMPSONS_TV_ART/11x18.webp"
+                },
+                {
+                    "codigo": "11x19",
+                    "imagen": "SIMPSONS_TV_ART/11x19.webp"
+                },
+                {
+                    "codigo": "11x20",
+                    "imagen": "SIMPSONS_TV_ART/11x20.webp"
+                },
+                {
+                    "codigo": "11x21",
+                    "imagen": "SIMPSONS_TV_ART/11x21.webp"
+                },
+                {
+                    "codigo": "11x22",
+                    "imagen": "SIMPSONS_TV_ART/11x22.webp"
+                }
+            ]
+        },
+        {
+            "temporada": 12,
+            "imagen": "SIMPSONS_TV_ART/Season_12_Icon.webp",
+            "capitulos": [
+                {
+                    "codigo": "12x01",
+                    "imagen": "SIMPSONS_TV_ART/12x01.webp"
+                },
+                {
+                    "codigo": "12x02",
+                    "imagen": "SIMPSONS_TV_ART/12x02.webp"
+                },
+                {
+                    "codigo": "12x03",
+                    "imagen": "SIMPSONS_TV_ART/12x03.webp"
+                },
+                {
+                    "codigo": "12x04",
+                    "imagen": "SIMPSONS_TV_ART/12x04.webp"
+                },
+                {
+                    "codigo": "12x05",
+                    "imagen": "SIMPSONS_TV_ART/12x05.webp"
+                },
+                {
+                    "codigo": "12x06",
+                    "imagen": "SIMPSONS_TV_ART/12x06.webp"
+                },
+                {
+                    "codigo": "12x07",
+                    "imagen": "SIMPSONS_TV_ART/12x07.webp"
+                },
+                {
+                    "codigo": "12x08",
+                    "imagen": "SIMPSONS_TV_ART/12x08.webp"
+                },
+                {
+                    "codigo": "12x09",
+                    "imagen": "SIMPSONS_TV_ART/12x09.webp"
+                },
+                {
+                    "codigo": "12x10",
+                    "imagen": "SIMPSONS_TV_ART/12x10.webp"
+                },
+                {
+                    "codigo": "12x11",
+                    "imagen": "SIMPSONS_TV_ART/12x11.webp"
+                },
+                {
+                    "codigo": "12x12",
+                    "imagen": "SIMPSONS_TV_ART/12x12.webp"
+                },
+                {
+                    "codigo": "12x13",
+                    "imagen": "SIMPSONS_TV_ART/12x13.webp"
+                },
+                {
+                    "codigo": "12x14",
+                    "imagen": "SIMPSONS_TV_ART/12x14.webp"
+                },
+                {
+                    "codigo": "12x15",
+                    "imagen": "SIMPSONS_TV_ART/12x15.webp"
+                },
+                {
+                    "codigo": "12x16",
+                    "imagen": "SIMPSONS_TV_ART/12x16.webp"
+                },
+                {
+                    "codigo": "12x17",
+                    "imagen": "SIMPSONS_TV_ART/12x17.webp"
+                },
+                {
+                    "codigo": "12x18",
+                    "imagen": "SIMPSONS_TV_ART/12x18.webp"
+                },
+                {
+                    "codigo": "12x19",
+                    "imagen": "SIMPSONS_TV_ART/12x19.webp"
+                },
+                {
+                    "codigo": "12x20",
+                    "imagen": "SIMPSONS_TV_ART/12x20.webp"
+                },
+                {
+                    "codigo": "12x21",
+                    "imagen": "SIMPSONS_TV_ART/12x21.webp"
+                }
+            ]
+        },
+        {
+            "temporada": 13,
+            "imagen": "SIMPSONS_TV_ART/Season_13_Icon.webp",
+            "capitulos": [
+                {
+                    "codigo": "13x01",
+                    "imagen": "SIMPSONS_TV_ART/13x01.webp"
+                },
+                {
+                    "codigo": "13x02",
+                    "imagen": "SIMPSONS_TV_ART/13x02.webp"
+                },
+                {
+                    "codigo": "13x03",
+                    "imagen": "SIMPSONS_TV_ART/13x03.webp"
+                },
+                {
+                    "codigo": "13x04",
+                    "imagen": "SIMPSONS_TV_ART/13x04.webp"
+                },
+                {
+                    "codigo": "13x05",
+                    "imagen": "SIMPSONS_TV_ART/13x05.webp"
+                },
+                {
+                    "codigo": "13x06",
+                    "imagen": "SIMPSONS_TV_ART/13x06.webp"
+                },
+                {
+                    "codigo": "13x07",
+                    "imagen": "SIMPSONS_TV_ART/13x07.webp"
+                },
+                {
+                    "codigo": "13x08",
+                    "imagen": "SIMPSONS_TV_ART/13x08.webp"
+                },
+                {
+                    "codigo": "13x09",
+                    "imagen": "SIMPSONS_TV_ART/13x09.webp"
+                },
+                {
+                    "codigo": "13x10",
+                    "imagen": "SIMPSONS_TV_ART/13x10.webp"
+                },
+                {
+                    "codigo": "13x11",
+                    "imagen": "SIMPSONS_TV_ART/13x11.webp"
+                },
+                {
+                    "codigo": "13x12",
+                    "imagen": "SIMPSONS_TV_ART/13x12.webp"
+                },
+                {
+                    "codigo": "13x13",
+                    "imagen": "SIMPSONS_TV_ART/13x13.webp"
+                },
+                {
+                    "codigo": "13x14",
+                    "imagen": "SIMPSONS_TV_ART/13x14.webp"
+                },
+                {
+                    "codigo": "13x15",
+                    "imagen": "SIMPSONS_TV_ART/13x15.webp"
+                },
+                {
+                    "codigo": "13x16",
+                    "imagen": "SIMPSONS_TV_ART/13x16.webp"
+                },
+                {
+                    "codigo": "13x17",
+                    "imagen": "SIMPSONS_TV_ART/13x17.webp"
+                },
+                {
+                    "codigo": "13x18",
+                    "imagen": "SIMPSONS_TV_ART/13x18.webp"
+                },
+                {
+                    "codigo": "13x19",
+                    "imagen": "SIMPSONS_TV_ART/13x19.webp"
+                },
+                {
+                    "codigo": "13x20",
+                    "imagen": "SIMPSONS_TV_ART/13x20.webp"
+                },
+                {
+                    "codigo": "13x21",
+                    "imagen": "SIMPSONS_TV_ART/13x21.webp"
+                },
+                {
+                    "codigo": "13x22",
+                    "imagen": "SIMPSONS_TV_ART/13x22.webp"
+                }
+            ]
+        },
+        {
+            "temporada": 14,
+            "imagen": "SIMPSONS_TV_ART/Season_14_Icon.webp",
+            "capitulos": [
+                {
+                    "codigo": "14x01",
+                    "imagen": "SIMPSONS_TV_ART/14x01.webp"
+                },
+                {
+                    "codigo": "14x02",
+                    "imagen": "SIMPSONS_TV_ART/14x02.webp"
+                },
+                {
+                    "codigo": "14x03",
+                    "imagen": "SIMPSONS_TV_ART/14x03.webp"
+                },
+                {
+                    "codigo": "14x04",
+                    "imagen": "SIMPSONS_TV_ART/14x04.webp"
+                },
+                {
+                    "codigo": "14x05",
+                    "imagen": "SIMPSONS_TV_ART/14x05.webp"
+                },
+                {
+                    "codigo": "14x06",
+                    "imagen": "SIMPSONS_TV_ART/14x06.webp"
+                },
+                {
+                    "codigo": "14x07",
+                    "imagen": "SIMPSONS_TV_ART/14x07.webp"
+                },
+                {
+                    "codigo": "14x08",
+                    "imagen": "SIMPSONS_TV_ART/14x08.webp"
+                },
+                {
+                    "codigo": "14x09",
+                    "imagen": "SIMPSONS_TV_ART/14x09.webp"
+                },
+                {
+                    "codigo": "14x10",
+                    "imagen": "SIMPSONS_TV_ART/14x10.webp"
+                },
+                {
+                    "codigo": "14x11",
+                    "imagen": "SIMPSONS_TV_ART/14x11.webp"
+                },
+                {
+                    "codigo": "14x12",
+                    "imagen": "SIMPSONS_TV_ART/14x12.webp"
+                },
+                {
+                    "codigo": "14x13",
+                    "imagen": "SIMPSONS_TV_ART/14x13.webp"
+                },
+                {
+                    "codigo": "14x14",
+                    "imagen": "SIMPSONS_TV_ART/14x14.webp"
+                },
+                {
+                    "codigo": "14x15",
+                    "imagen": "SIMPSONS_TV_ART/14x15.webp"
+                },
+                {
+                    "codigo": "14x16",
+                    "imagen": "SIMPSONS_TV_ART/14x16.webp"
+                },
+                {
+                    "codigo": "14x17",
+                    "imagen": "SIMPSONS_TV_ART/14x17.webp"
+                },
+                {
+                    "codigo": "14x18",
+                    "imagen": "SIMPSONS_TV_ART/14x18.webp"
+                },
+                {
+                    "codigo": "14x19",
+                    "imagen": "SIMPSONS_TV_ART/14x19.webp"
+                },
+                {
+                    "codigo": "14x20",
+                    "imagen": "SIMPSONS_TV_ART/14x20.webp"
+                },
+                {
+                    "codigo": "14x21",
+                    "imagen": "SIMPSONS_TV_ART/14x21.webp"
+                },
+                {
+                    "codigo": "14x22",
+                    "imagen": "SIMPSONS_TV_ART/14x22.webp"
+                }
+            ]
+        },
+        {
+            "temporada": 15,
+            "imagen": "SIMPSONS_TV_ART/Season_15_Icon.webp",
+            "capitulos": [
+                {
+                    "codigo": "15x01",
+                    "imagen": "SIMPSONS_TV_ART/15x01.webp"
+                },
+                {
+                    "codigo": "15x02",
+                    "imagen": "SIMPSONS_TV_ART/15x02.webp"
+                },
+                {
+                    "codigo": "15x03",
+                    "imagen": "SIMPSONS_TV_ART/15x03.webp"
+                },
+                {
+                    "codigo": "15x04",
+                    "imagen": "SIMPSONS_TV_ART/15x04.webp"
+                },
+                {
+                    "codigo": "15x05",
+                    "imagen": "SIMPSONS_TV_ART/15x05.webp"
+                },
+                {
+                    "codigo": "15x06",
+                    "imagen": "SIMPSONS_TV_ART/15x06.webp"
+                },
+                {
+                    "codigo": "15x07",
+                    "imagen": "SIMPSONS_TV_ART/15x07.webp"
+                },
+                {
+                    "codigo": "15x08",
+                    "imagen": "SIMPSONS_TV_ART/15x08.webp"
+                },
+                {
+                    "codigo": "15x09",
+                    "imagen": "SIMPSONS_TV_ART/15x09.webp"
+                },
+                {
+                    "codigo": "15x10",
+                    "imagen": "SIMPSONS_TV_ART/15x10.webp"
+                },
+                {
+                    "codigo": "15x11",
+                    "imagen": "SIMPSONS_TV_ART/15x11.webp"
+                },
+                {
+                    "codigo": "15x12",
+                    "imagen": "SIMPSONS_TV_ART/15x12.webp"
+                },
+                {
+                    "codigo": "15x13",
+                    "imagen": "SIMPSONS_TV_ART/15x13.webp"
+                },
+                {
+                    "codigo": "15x14",
+                    "imagen": "SIMPSONS_TV_ART/15x14.webp"
+                },
+                {
+                    "codigo": "15x15",
+                    "imagen": "SIMPSONS_TV_ART/15x15.webp"
+                },
+                {
+                    "codigo": "15x16",
+                    "imagen": "SIMPSONS_TV_ART/15x16.webp"
+                },
+                {
+                    "codigo": "15x17",
+                    "imagen": "SIMPSONS_TV_ART/15x17.webp"
+                },
+                {
+                    "codigo": "15x18",
+                    "imagen": "SIMPSONS_TV_ART/15x18.webp"
+                },
+                {
+                    "codigo": "15x19",
+                    "imagen": "SIMPSONS_TV_ART/15x19.webp"
+                },
+                {
+                    "codigo": "15x20",
+                    "imagen": "SIMPSONS_TV_ART/15x20.webp"
+                },
+                {
+                    "codigo": "15x21",
+                    "imagen": "SIMPSONS_TV_ART/15x21.webp"
+                },
+                {
+                    "codigo": "15x22",
+                    "imagen": "SIMPSONS_TV_ART/15x22.webp"
+                }
+            ]
+        },
+        {
+            "temporada": 16,
+            "imagen": "SIMPSONS_TV_ART/Season_16_Icon.webp",
+            "capitulos": [
+                {
+                    "codigo": "16x01",
+                    "imagen": "SIMPSONS_TV_ART/16x01.webp"
+                },
+                {
+                    "codigo": "16x02",
+                    "imagen": "SIMPSONS_TV_ART/16x02.webp"
+                },
+                {
+                    "codigo": "16x03",
+                    "imagen": "SIMPSONS_TV_ART/16x03.webp"
+                },
+                {
+                    "codigo": "16x04",
+                    "imagen": "SIMPSONS_TV_ART/16x04.webp"
+                },
+                {
+                    "codigo": "16x05",
+                    "imagen": "SIMPSONS_TV_ART/16x05.webp"
+                },
+                {
+                    "codigo": "16x06",
+                    "imagen": "SIMPSONS_TV_ART/16x06.webp"
+                },
+                {
+                    "codigo": "16x07",
+                    "imagen": "SIMPSONS_TV_ART/16x07.webp"
+                },
+                {
+                    "codigo": "16x08",
+                    "imagen": "SIMPSONS_TV_ART/16x08.webp"
+                },
+                {
+                    "codigo": "16x09",
+                    "imagen": "SIMPSONS_TV_ART/16x09.webp"
+                },
+                {
+                    "codigo": "16x10",
+                    "imagen": "SIMPSONS_TV_ART/16x10.webp"
+                },
+                {
+                    "codigo": "16x11",
+                    "imagen": "SIMPSONS_TV_ART/16x11.webp"
+                },
+                {
+                    "codigo": "16x12",
+                    "imagen": "SIMPSONS_TV_ART/16x12.webp"
+                },
+                {
+                    "codigo": "16x13",
+                    "imagen": "SIMPSONS_TV_ART/16x13.webp"
+                },
+                {
+                    "codigo": "16x14",
+                    "imagen": "SIMPSONS_TV_ART/16x14.webp"
+                },
+                {
+                    "codigo": "16x15",
+                    "imagen": "SIMPSONS_TV_ART/16x15.webp"
+                },
+                {
+                    "codigo": "16x16",
+                    "imagen": "SIMPSONS_TV_ART/16x16.webp"
+                },
+                {
+                    "codigo": "16x17",
+                    "imagen": "SIMPSONS_TV_ART/16x17.webp"
+                },
+                {
+                    "codigo": "16x18",
+                    "imagen": "SIMPSONS_TV_ART/16x18.webp"
+                },
+                {
+                    "codigo": "16x19",
+                    "imagen": "SIMPSONS_TV_ART/16x19.webp"
+                },
+                {
+                    "codigo": "16x20",
+                    "imagen": "SIMPSONS_TV_ART/16x20.webp"
+                },
+                {
+                    "codigo": "16x21",
+                    "imagen": "SIMPSONS_TV_ART/16x21.webp"
+                }
+            ]
+        },
+        {
+            "temporada": 17,
+            "imagen": "SIMPSONS_TV_ART/Season_17_Icon.webp",
+            "capitulos": [
+                {
+                    "codigo": "17x01",
+                    "imagen": "SIMPSONS_TV_ART/17x01.webp"
+                },
+                {
+                    "codigo": "17x02",
+                    "imagen": "SIMPSONS_TV_ART/17x02.webp"
+                },
+                {
+                    "codigo": "17x03",
+                    "imagen": "SIMPSONS_TV_ART/17x03.webp"
+                },
+                {
+                    "codigo": "17x04",
+                    "imagen": "SIMPSONS_TV_ART/17x04.webp"
+                },
+                {
+                    "codigo": "17x05",
+                    "imagen": "SIMPSONS_TV_ART/17x05.webp"
+                },
+                {
+                    "codigo": "17x06",
+                    "imagen": "SIMPSONS_TV_ART/17x06.webp"
+                },
+                {
+                    "codigo": "17x07",
+                    "imagen": "SIMPSONS_TV_ART/17x07.webp"
+                },
+                {
+                    "codigo": "17x08",
+                    "imagen": "SIMPSONS_TV_ART/17x08.webp"
+                },
+                {
+                    "codigo": "17x09",
+                    "imagen": "SIMPSONS_TV_ART/17x09.webp"
+                },
+                {
+                    "codigo": "17x10",
+                    "imagen": "SIMPSONS_TV_ART/17x10.webp"
+                },
+                {
+                    "codigo": "17x11",
+                    "imagen": "SIMPSONS_TV_ART/17x11.webp"
+                },
+                {
+                    "codigo": "17x12",
+                    "imagen": "SIMPSONS_TV_ART/17x12.webp"
+                },
+                {
+                    "codigo": "17x13",
+                    "imagen": "SIMPSONS_TV_ART/17x13.webp"
+                },
+                {
+                    "codigo": "17x14",
+                    "imagen": "SIMPSONS_TV_ART/17x14.webp"
+                },
+                {
+                    "codigo": "17x15",
+                    "imagen": "SIMPSONS_TV_ART/17x15.webp"
+                },
+                {
+                    "codigo": "17x16",
+                    "imagen": "SIMPSONS_TV_ART/17x16.webp"
+                },
+                {
+                    "codigo": "17x17",
+                    "imagen": "SIMPSONS_TV_ART/17x17.webp"
+                },
+                {
+                    "codigo": "17x18",
+                    "imagen": "SIMPSONS_TV_ART/17x18.webp"
+                },
+                {
+                    "codigo": "17x19",
+                    "imagen": "SIMPSONS_TV_ART/17x19.webp"
+                },
+                {
+                    "codigo": "17x20",
+                    "imagen": "SIMPSONS_TV_ART/17x20.webp"
+                },
+                {
+                    "codigo": "17x21",
+                    "imagen": "SIMPSONS_TV_ART/17x21.webp"
+                },
+                {
+                    "codigo": "17x22",
+                    "imagen": "SIMPSONS_TV_ART/17x22.webp"
+                }
+            ]
+        },
+        {
+            "temporada": 18,
+            "imagen": "SIMPSONS_TV_ART/Season_18_Icon.webp",
+            "capitulos": [
+                {
+                    "codigo": "18x01",
+                    "imagen": "SIMPSONS_TV_ART/18x01.webp"
+                },
+                {
+                    "codigo": "18x02",
+                    "imagen": "SIMPSONS_TV_ART/18x02.webp"
+                },
+                {
+                    "codigo": "18x03",
+                    "imagen": "SIMPSONS_TV_ART/18x03.webp"
+                },
+                {
+                    "codigo": "18x04",
+                    "imagen": "SIMPSONS_TV_ART/18x04.webp"
+                },
+                {
+                    "codigo": "18x05",
+                    "imagen": "SIMPSONS_TV_ART/18x05.webp"
+                },
+                {
+                    "codigo": "18x06",
+                    "imagen": "SIMPSONS_TV_ART/18x06.webp"
+                },
+                {
+                    "codigo": "18x07",
+                    "imagen": "SIMPSONS_TV_ART/18x07.webp"
+                },
+                {
+                    "codigo": "18x08",
+                    "imagen": "SIMPSONS_TV_ART/18x08.webp"
+                },
+                {
+                    "codigo": "18x09",
+                    "imagen": "SIMPSONS_TV_ART/18x09.webp"
+                },
+                {
+                    "codigo": "18x10",
+                    "imagen": "SIMPSONS_TV_ART/18x10.webp"
+                },
+                {
+                    "codigo": "18x11",
+                    "imagen": "SIMPSONS_TV_ART/18x11.webp"
+                },
+                {
+                    "codigo": "18x12",
+                    "imagen": "SIMPSONS_TV_ART/18x12.webp"
+                },
+                {
+                    "codigo": "18x13",
+                    "imagen": "SIMPSONS_TV_ART/18x13.webp"
+                },
+                {
+                    "codigo": "18x14",
+                    "imagen": "SIMPSONS_TV_ART/18x14.webp"
+                },
+                {
+                    "codigo": "18x15",
+                    "imagen": "SIMPSONS_TV_ART/18x15.webp"
+                },
+                {
+                    "codigo": "18x16",
+                    "imagen": "SIMPSONS_TV_ART/18x16.webp"
+                },
+                {
+                    "codigo": "18x17",
+                    "imagen": "SIMPSONS_TV_ART/18x17.webp"
+                },
+                {
+                    "codigo": "18x18",
+                    "imagen": "SIMPSONS_TV_ART/18x18.webp"
+                },
+                {
+                    "codigo": "18x19",
+                    "imagen": "SIMPSONS_TV_ART/18x19.webp"
+                },
+                {
+                    "codigo": "18x20",
+                    "imagen": "SIMPSONS_TV_ART/18x20.webp"
+                },
+                {
+                    "codigo": "18x21",
+                    "imagen": "SIMPSONS_TV_ART/18x21.webp"
+                },
+                {
+                    "codigo": "18x22",
+                    "imagen": "SIMPSONS_TV_ART/18x22.webp"
+                }
+            ]
+        },
+        {
+            "temporada": 19,
+            "imagen": "SIMPSONS_TV_ART/Season_19_Icon.webp",
+            "capitulos": [
+                {
+                    "codigo": "19x01",
+                    "imagen": "SIMPSONS_TV_ART/19x01.webp"
+                },
+                {
+                    "codigo": "19x02",
+                    "imagen": "SIMPSONS_TV_ART/19x02.webp"
+                },
+                {
+                    "codigo": "19x03",
+                    "imagen": "SIMPSONS_TV_ART/19x03.webp"
+                },
+                {
+                    "codigo": "19x04",
+                    "imagen": "SIMPSONS_TV_ART/19x04.webp"
+                },
+                {
+                    "codigo": "19x05",
+                    "imagen": "SIMPSONS_TV_ART/19x05.webp"
+                },
+                {
+                    "codigo": "19x06",
+                    "imagen": "SIMPSONS_TV_ART/19x06.webp"
+                },
+                {
+                    "codigo": "19x07",
+                    "imagen": "SIMPSONS_TV_ART/19x07.webp"
+                },
+                {
+                    "codigo": "19x08",
+                    "imagen": "SIMPSONS_TV_ART/19x08.webp"
+                },
+                {
+                    "codigo": "19x09",
+                    "imagen": "SIMPSONS_TV_ART/19x09.webp"
+                },
+                {
+                    "codigo": "19x10",
+                    "imagen": "SIMPSONS_TV_ART/19x10.webp"
+                },
+                {
+                    "codigo": "19x11",
+                    "imagen": "SIMPSONS_TV_ART/19x11.webp"
+                },
+                {
+                    "codigo": "19x12",
+                    "imagen": "SIMPSONS_TV_ART/19x12.webp"
+                },
+                {
+                    "codigo": "19x13",
+                    "imagen": "SIMPSONS_TV_ART/19x13.webp"
+                },
+                {
+                    "codigo": "19x14",
+                    "imagen": "SIMPSONS_TV_ART/19x14.webp"
+                },
+                {
+                    "codigo": "19x15",
+                    "imagen": "SIMPSONS_TV_ART/19x15.webp"
+                },
+                {
+                    "codigo": "19x16",
+                    "imagen": "SIMPSONS_TV_ART/19x16.webp"
+                },
+                {
+                    "codigo": "19x17",
+                    "imagen": "SIMPSONS_TV_ART/19x17.webp"
+                },
+                {
+                    "codigo": "19x18",
+                    "imagen": "SIMPSONS_TV_ART/19x18.webp"
+                },
+                {
+                    "codigo": "19x19",
+                    "imagen": "SIMPSONS_TV_ART/19x19.webp"
+                },
+                {
+                    "codigo": "19x20",
+                    "imagen": "SIMPSONS_TV_ART/19x20.webp"
+                }
+            ]
+        },
+        {
+            "temporada": 20,
+            "imagen": "SIMPSONS_TV_ART/Season_20_Icon.webp",
+            "capitulos": [
+                {
+                    "codigo": "20x01",
+                    "imagen": "SIMPSONS_TV_ART/20x01.webp"
+                },
+                {
+                    "codigo": "20x02",
+                    "imagen": "SIMPSONS_TV_ART/20x02.webp"
+                },
+                {
+                    "codigo": "20x03",
+                    "imagen": "SIMPSONS_TV_ART/20x03.webp"
+                },
+                {
+                    "codigo": "20x04",
+                    "imagen": "SIMPSONS_TV_ART/20x04.webp"
+                },
+                {
+                    "codigo": "20x05",
+                    "imagen": "SIMPSONS_TV_ART/20x05.webp"
+                },
+                {
+                    "codigo": "20x06",
+                    "imagen": "SIMPSONS_TV_ART/20x06.webp"
+                },
+                {
+                    "codigo": "20x07",
+                    "imagen": "SIMPSONS_TV_ART/20x07.webp"
+                },
+                {
+                    "codigo": "20x08",
+                    "imagen": "SIMPSONS_TV_ART/20x08.webp"
+                },
+                {
+                    "codigo": "20x09",
+                    "imagen": "SIMPSONS_TV_ART/20x09.webp"
+                },
+                {
+                    "codigo": "20x10",
+                    "imagen": "SIMPSONS_TV_ART/20x10.webp"
+                },
+                {
+                    "codigo": "20x11",
+                    "imagen": "SIMPSONS_TV_ART/20x11.webp"
+                },
+                {
+                    "codigo": "20x12",
+                    "imagen": "SIMPSONS_TV_ART/20x12.webp"
+                },
+                {
+                    "codigo": "20x13",
+                    "imagen": "SIMPSONS_TV_ART/20x13.webp"
+                },
+                {
+                    "codigo": "20x14",
+                    "imagen": "SIMPSONS_TV_ART/20x14.webp"
+                },
+                {
+                    "codigo": "20x15",
+                    "imagen": "SIMPSONS_TV_ART/20x15.webp"
+                },
+                {
+                    "codigo": "20x16",
+                    "imagen": "SIMPSONS_TV_ART/20x16.webp"
+                },
+                {
+                    "codigo": "20x17",
+                    "imagen": "SIMPSONS_TV_ART/20x17.webp"
+                },
+                {
+                    "codigo": "20x18",
+                    "imagen": "SIMPSONS_TV_ART/20x18.webp"
+                },
+                {
+                    "codigo": "20x19",
+                    "imagen": "SIMPSONS_TV_ART/20x19.webp"
+                },
+                {
+                    "codigo": "20x20",
+                    "imagen": "SIMPSONS_TV_ART/20x20.webp"
+                },
+                {
+                    "codigo": "20x21",
+                    "imagen": "SIMPSONS_TV_ART/20x21.webp"
+                }
+            ]
+        },
+        {
+            "temporada": 21,
+            "imagen": "SIMPSONS_TV_ART/Season_21_Icon.webp",
+            "capitulos": [
+                {
+                    "codigo": "21x01",
+                    "imagen": "SIMPSONS_TV_ART/21x01.webp"
+                },
+                {
+                    "codigo": "21x02",
+                    "imagen": "SIMPSONS_TV_ART/21x02.webp"
+                },
+                {
+                    "codigo": "21x03",
+                    "imagen": "SIMPSONS_TV_ART/21x03.webp"
+                },
+                {
+                    "codigo": "21x04",
+                    "imagen": "SIMPSONS_TV_ART/21x04.webp"
+                },
+                {
+                    "codigo": "21x05",
+                    "imagen": "SIMPSONS_TV_ART/21x05.webp"
+                },
+                {
+                    "codigo": "21x06",
+                    "imagen": "SIMPSONS_TV_ART/21x06.webp"
+                },
+                {
+                    "codigo": "21x07",
+                    "imagen": "SIMPSONS_TV_ART/21x07.webp"
+                },
+                {
+                    "codigo": "21x08",
+                    "imagen": "SIMPSONS_TV_ART/21x08.webp"
+                },
+                {
+                    "codigo": "21x09",
+                    "imagen": "SIMPSONS_TV_ART/21x09.webp"
+                },
+                {
+                    "codigo": "21x10",
+                    "imagen": "SIMPSONS_TV_ART/21x10.webp"
+                },
+                {
+                    "codigo": "21x11",
+                    "imagen": "SIMPSONS_TV_ART/21x11.webp"
+                },
+                {
+                    "codigo": "21x12",
+                    "imagen": "SIMPSONS_TV_ART/21x12.webp"
+                },
+                {
+                    "codigo": "21x13",
+                    "imagen": "SIMPSONS_TV_ART/21x13.webp"
+                },
+                {
+                    "codigo": "21x14",
+                    "imagen": "SIMPSONS_TV_ART/21x14.webp"
+                },
+                {
+                    "codigo": "21x15",
+                    "imagen": "SIMPSONS_TV_ART/21x15.webp"
+                },
+                {
+                    "codigo": "21x16",
+                    "imagen": "SIMPSONS_TV_ART/21x16.webp"
+                },
+                {
+                    "codigo": "21x17",
+                    "imagen": "SIMPSONS_TV_ART/21x17.webp"
+                },
+                {
+                    "codigo": "21x18",
+                    "imagen": "SIMPSONS_TV_ART/21x18.webp"
+                },
+                {
+                    "codigo": "21x19",
+                    "imagen": "SIMPSONS_TV_ART/21x19.webp"
+                },
+                {
+                    "codigo": "21x20",
+                    "imagen": "SIMPSONS_TV_ART/21x20.webp"
+                },
+                {
+                    "codigo": "21x21",
+                    "imagen": "SIMPSONS_TV_ART/21x21.webp"
+                },
+                {
+                    "codigo": "21x22",
+                    "imagen": "SIMPSONS_TV_ART/21x22.webp"
+                },
+                {
+                    "codigo": "21x23",
+                    "imagen": "SIMPSONS_TV_ART/21x23.webp"
+                }
+            ]
+        },
+        {
+            "temporada": 22,
+            "imagen": "SIMPSONS_TV_ART/Season_22_Icon.webp",
+            "capitulos": [
+                {
+                    "codigo": "22x01",
+                    "imagen": "SIMPSONS_TV_ART/22x01.webp"
+                },
+                {
+                    "codigo": "22x02",
+                    "imagen": "SIMPSONS_TV_ART/22x02.webp"
+                },
+                {
+                    "codigo": "22x03",
+                    "imagen": "SIMPSONS_TV_ART/22x03.webp"
+                },
+                {
+                    "codigo": "22x04",
+                    "imagen": "SIMPSONS_TV_ART/22x04.webp"
+                },
+                {
+                    "codigo": "22x05",
+                    "imagen": "SIMPSONS_TV_ART/22x05.webp"
+                },
+                {
+                    "codigo": "22x06",
+                    "imagen": "SIMPSONS_TV_ART/22x06.webp"
+                },
+                {
+                    "codigo": "22x07",
+                    "imagen": "SIMPSONS_TV_ART/22x07.webp"
+                },
+                {
+                    "codigo": "22x08",
+                    "imagen": "SIMPSONS_TV_ART/22x08.webp"
+                },
+                {
+                    "codigo": "22x09",
+                    "imagen": "SIMPSONS_TV_ART/22x09.webp"
+                },
+                {
+                    "codigo": "22x10",
+                    "imagen": "SIMPSONS_TV_ART/22x10.webp"
+                },
+                {
+                    "codigo": "22x11",
+                    "imagen": "SIMPSONS_TV_ART/22x11.webp"
+                },
+                {
+                    "codigo": "22x12",
+                    "imagen": "SIMPSONS_TV_ART/22x12.webp"
+                },
+                {
+                    "codigo": "22x13",
+                    "imagen": "SIMPSONS_TV_ART/22x13.webp"
+                },
+                {
+                    "codigo": "22x14",
+                    "imagen": "SIMPSONS_TV_ART/22x14.webp"
+                },
+                {
+                    "codigo": "22x15",
+                    "imagen": "SIMPSONS_TV_ART/22x15.webp"
+                },
+                {
+                    "codigo": "22x16",
+                    "imagen": "SIMPSONS_TV_ART/22x16.webp"
+                },
+                {
+                    "codigo": "22x17",
+                    "imagen": "SIMPSONS_TV_ART/22x17.webp"
+                },
+                {
+                    "codigo": "22x18",
+                    "imagen": "SIMPSONS_TV_ART/22x18.webp"
+                },
+                {
+                    "codigo": "22x19",
+                    "imagen": "SIMPSONS_TV_ART/22x19.webp"
+                },
+                {
+                    "codigo": "22x20",
+                    "imagen": "SIMPSONS_TV_ART/22x20.webp"
+                },
+                {
+                    "codigo": "22x21",
+                    "imagen": "SIMPSONS_TV_ART/22x21.webp"
+                },
+                {
+                    "codigo": "22x22",
+                    "imagen": "SIMPSONS_TV_ART/22x22.webp"
+                }
+            ]
+        },
+        {
+            "temporada": 23,
+            "imagen": "SIMPSONS_TV_ART/Season_23_Icon.webp",
+            "capitulos": [
+                {
+                    "codigo": "23x01",
+                    "imagen": "SIMPSONS_TV_ART/23x01.webp"
+                },
+                {
+                    "codigo": "23x02",
+                    "imagen": "SIMPSONS_TV_ART/23x02.webp"
+                },
+                {
+                    "codigo": "23x03",
+                    "imagen": "SIMPSONS_TV_ART/23x03.webp"
+                },
+                {
+                    "codigo": "23x04",
+                    "imagen": "SIMPSONS_TV_ART/23x04.webp"
+                },
+                {
+                    "codigo": "23x05",
+                    "imagen": "SIMPSONS_TV_ART/23x05.webp"
+                },
+                {
+                    "codigo": "23x06",
+                    "imagen": "SIMPSONS_TV_ART/23x06.webp"
+                },
+                {
+                    "codigo": "23x07",
+                    "imagen": "SIMPSONS_TV_ART/23x07.webp"
+                },
+                {
+                    "codigo": "23x08",
+                    "imagen": "SIMPSONS_TV_ART/23x08.webp"
+                },
+                {
+                    "codigo": "23x09",
+                    "imagen": "SIMPSONS_TV_ART/23x09.webp"
+                },
+                {
+                    "codigo": "23x10",
+                    "imagen": "SIMPSONS_TV_ART/23x10.webp"
+                },
+                {
+                    "codigo": "23x11",
+                    "imagen": "SIMPSONS_TV_ART/23x11.webp"
+                },
+                {
+                    "codigo": "23x12",
+                    "imagen": "SIMPSONS_TV_ART/23x12.webp"
+                },
+                {
+                    "codigo": "23x13",
+                    "imagen": "SIMPSONS_TV_ART/23x13.webp"
+                },
+                {
+                    "codigo": "23x14",
+                    "imagen": "SIMPSONS_TV_ART/23x14.webp"
+                },
+                {
+                    "codigo": "23x15",
+                    "imagen": "SIMPSONS_TV_ART/23x15.webp"
+                },
+                {
+                    "codigo": "23x16",
+                    "imagen": "SIMPSONS_TV_ART/23x16.webp"
+                },
+                {
+                    "codigo": "23x17",
+                    "imagen": "SIMPSONS_TV_ART/23x17.webp"
+                },
+                {
+                    "codigo": "23x18",
+                    "imagen": "SIMPSONS_TV_ART/23x18.webp"
+                },
+                {
+                    "codigo": "23x19",
+                    "imagen": "SIMPSONS_TV_ART/23x19.webp"
+                },
+                {
+                    "codigo": "23x20",
+                    "imagen": "SIMPSONS_TV_ART/23x20.webp"
+                },
+                {
+                    "codigo": "23x21",
+                    "imagen": "SIMPSONS_TV_ART/23x21.webp"
+                },
+                {
+                    "codigo": "23x22",
+                    "imagen": "SIMPSONS_TV_ART/23x22.webp"
+                }
+            ]
+        },
+        {
+            "temporada": 24,
+            "imagen": "SIMPSONS_TV_ART/Season_24_Icon.webp",
+            "capitulos": [
+                {
+                    "codigo": "24x01",
+                    "imagen": "SIMPSONS_TV_ART/24x01.webp"
+                },
+                {
+                    "codigo": "24x02",
+                    "imagen": "SIMPSONS_TV_ART/24x02.webp"
+                },
+                {
+                    "codigo": "24x03",
+                    "imagen": "SIMPSONS_TV_ART/24x03.webp"
+                },
+                {
+                    "codigo": "24x04",
+                    "imagen": "SIMPSONS_TV_ART/24x04.webp"
+                },
+                {
+                    "codigo": "24x05",
+                    "imagen": "SIMPSONS_TV_ART/24x05.webp"
+                },
+                {
+                    "codigo": "24x06",
+                    "imagen": "SIMPSONS_TV_ART/24x06.webp"
+                },
+                {
+                    "codigo": "24x07",
+                    "imagen": "SIMPSONS_TV_ART/24x07.webp"
+                },
+                {
+                    "codigo": "24x08",
+                    "imagen": "SIMPSONS_TV_ART/24x08.webp"
+                },
+                {
+                    "codigo": "24x09",
+                    "imagen": "SIMPSONS_TV_ART/24x09.webp"
+                },
+                {
+                    "codigo": "24x10",
+                    "imagen": "SIMPSONS_TV_ART/24x10.webp"
+                },
+                {
+                    "codigo": "24x11",
+                    "imagen": "SIMPSONS_TV_ART/24x11.webp"
+                },
+                {
+                    "codigo": "24x12",
+                    "imagen": "SIMPSONS_TV_ART/24x12.webp"
+                },
+                {
+                    "codigo": "24x13",
+                    "imagen": "SIMPSONS_TV_ART/24x13.webp"
+                },
+                {
+                    "codigo": "24x14",
+                    "imagen": "SIMPSONS_TV_ART/24x14.webp"
+                },
+                {
+                    "codigo": "24x15",
+                    "imagen": "SIMPSONS_TV_ART/24x15.webp"
+                },
+                {
+                    "codigo": "24x16",
+                    "imagen": "SIMPSONS_TV_ART/24x16.webp"
+                },
+                {
+                    "codigo": "24x17",
+                    "imagen": "SIMPSONS_TV_ART/24x17.webp"
+                },
+                {
+                    "codigo": "24x18",
+                    "imagen": "SIMPSONS_TV_ART/24x18.webp"
+                },
+                {
+                    "codigo": "24x19",
+                    "imagen": "SIMPSONS_TV_ART/24x19.webp"
+                },
+                {
+                    "codigo": "24x20",
+                    "imagen": "SIMPSONS_TV_ART/24x20.webp"
+                },
+                {
+                    "codigo": "24x21",
+                    "imagen": "SIMPSONS_TV_ART/24x21.webp"
+                },
+                {
+                    "codigo": "24x22",
+                    "imagen": "SIMPSONS_TV_ART/24x22.webp"
+                }
+            ]
+        },
+        {
+            "temporada": 25,
+            "imagen": "SIMPSONS_TV_ART/Season_25_Icon.webp",
+            "capitulos": [
+                {
+                    "codigo": "25x01",
+                    "imagen": "SIMPSONS_TV_ART/25x01.webp"
+                },
+                {
+                    "codigo": "25x02",
+                    "imagen": "SIMPSONS_TV_ART/25x02.webp"
+                },
+                {
+                    "codigo": "25x03",
+                    "imagen": "SIMPSONS_TV_ART/25x03.webp"
+                },
+                {
+                    "codigo": "25x04",
+                    "imagen": "SIMPSONS_TV_ART/25x04.webp"
+                },
+                {
+                    "codigo": "25x05",
+                    "imagen": "SIMPSONS_TV_ART/25x05.webp"
+                },
+                {
+                    "codigo": "25x06",
+                    "imagen": "SIMPSONS_TV_ART/25x06.webp"
+                },
+                {
+                    "codigo": "25x07",
+                    "imagen": "SIMPSONS_TV_ART/25x07.webp"
+                },
+                {
+                    "codigo": "25x08",
+                    "imagen": "SIMPSONS_TV_ART/25x08.webp"
+                },
+                {
+                    "codigo": "25x09",
+                    "imagen": "SIMPSONS_TV_ART/25x09.webp"
+                },
+                {
+                    "codigo": "25x10",
+                    "imagen": "SIMPSONS_TV_ART/25x10.webp"
+                },
+                {
+                    "codigo": "25x11",
+                    "imagen": "SIMPSONS_TV_ART/25x11.webp"
+                },
+                {
+                    "codigo": "25x12",
+                    "imagen": "SIMPSONS_TV_ART/25x12.webp"
+                },
+                {
+                    "codigo": "25x13",
+                    "imagen": "SIMPSONS_TV_ART/25x13.webp"
+                },
+                {
+                    "codigo": "25x14",
+                    "imagen": "SIMPSONS_TV_ART/25x14.webp"
+                },
+                {
+                    "codigo": "25x15",
+                    "imagen": "SIMPSONS_TV_ART/25x15.webp"
+                },
+                {
+                    "codigo": "25x16",
+                    "imagen": "SIMPSONS_TV_ART/25x16.webp"
+                },
+                {
+                    "codigo": "25x17",
+                    "imagen": "SIMPSONS_TV_ART/25x17.webp"
+                },
+                {
+                    "codigo": "25x18",
+                    "imagen": "SIMPSONS_TV_ART/25x18.webp"
+                },
+                {
+                    "codigo": "25x19",
+                    "imagen": "SIMPSONS_TV_ART/25x19.webp"
+                },
+                {
+                    "codigo": "25x20",
+                    "imagen": "SIMPSONS_TV_ART/25x20.webp"
+                },
+                {
+                    "codigo": "25x21",
+                    "imagen": "SIMPSONS_TV_ART/25x21.webp"
+                },
+                {
+                    "codigo": "25x22",
+                    "imagen": "SIMPSONS_TV_ART/25x22.webp"
+                }
+            ]
+        },
+        {
+            "temporada": 26,
+            "imagen": "SIMPSONS_TV_ART/Season_26_Icon.webp",
+            "capitulos": [
+                {
+                    "codigo": "26x01",
+                    "imagen": "SIMPSONS_TV_ART/26x01.webp"
+                },
+                {
+                    "codigo": "26x02",
+                    "imagen": "SIMPSONS_TV_ART/26x02.webp"
+                },
+                {
+                    "codigo": "26x03",
+                    "imagen": "SIMPSONS_TV_ART/26x03.webp"
+                },
+                {
+                    "codigo": "26x04",
+                    "imagen": "SIMPSONS_TV_ART/26x04.webp"
+                },
+                {
+                    "codigo": "26x05",
+                    "imagen": "SIMPSONS_TV_ART/26x05.webp"
+                },
+                {
+                    "codigo": "26x06",
+                    "imagen": "SIMPSONS_TV_ART/26x06.webp"
+                },
+                {
+                    "codigo": "26x07",
+                    "imagen": "SIMPSONS_TV_ART/26x07.webp"
+                },
+                {
+                    "codigo": "26x08",
+                    "imagen": "SIMPSONS_TV_ART/26x08.webp"
+                },
+                {
+                    "codigo": "26x09",
+                    "imagen": "SIMPSONS_TV_ART/26x09.webp"
+                },
+                {
+                    "codigo": "26x10",
+                    "imagen": "SIMPSONS_TV_ART/26x10.webp"
+                },
+                {
+                    "codigo": "26x11",
+                    "imagen": "SIMPSONS_TV_ART/26x11.webp"
+                },
+                {
+                    "codigo": "26x12",
+                    "imagen": "SIMPSONS_TV_ART/26x12.webp"
+                },
+                {
+                    "codigo": "26x13",
+                    "imagen": "SIMPSONS_TV_ART/26x13.webp"
+                },
+                {
+                    "codigo": "26x14",
+                    "imagen": "SIMPSONS_TV_ART/26x14.webp"
+                },
+                {
+                    "codigo": "26x15",
+                    "imagen": "SIMPSONS_TV_ART/26x15.webp"
+                },
+                {
+                    "codigo": "26x16",
+                    "imagen": "SIMPSONS_TV_ART/26x16.webp"
+                },
+                {
+                    "codigo": "26x17",
+                    "imagen": "SIMPSONS_TV_ART/26x17.webp"
+                },
+                {
+                    "codigo": "26x18",
+                    "imagen": "SIMPSONS_TV_ART/26x18.webp"
+                },
+                {
+                    "codigo": "26x19",
+                    "imagen": "SIMPSONS_TV_ART/26x19.webp"
+                },
+                {
+                    "codigo": "26x20",
+                    "imagen": "SIMPSONS_TV_ART/26x20.webp"
+                },
+                {
+                    "codigo": "26x21",
+                    "imagen": "SIMPSONS_TV_ART/26x21.webp"
+                },
+                {
+                    "codigo": "26x22",
+                    "imagen": "SIMPSONS_TV_ART/26x22.webp"
+                }
+            ]
+        },
+        {
+            "temporada": 27,
+            "imagen": "SIMPSONS_TV_ART/Season_27_Icon.webp",
+            "capitulos": [
+                {
+                    "codigo": "27x01",
+                    "imagen": "SIMPSONS_TV_ART/27x01.webp"
+                },
+                {
+                    "codigo": "27x02",
+                    "imagen": "SIMPSONS_TV_ART/27x02.webp"
+                },
+                {
+                    "codigo": "27x03",
+                    "imagen": "SIMPSONS_TV_ART/27x03.webp"
+                },
+                {
+                    "codigo": "27x04",
+                    "imagen": "SIMPSONS_TV_ART/27x04.webp"
+                },
+                {
+                    "codigo": "27x05",
+                    "imagen": "SIMPSONS_TV_ART/27x05.webp"
+                },
+                {
+                    "codigo": "27x06",
+                    "imagen": "SIMPSONS_TV_ART/27x06.webp"
+                },
+                {
+                    "codigo": "27x07",
+                    "imagen": "SIMPSONS_TV_ART/27x07.webp"
+                },
+                {
+                    "codigo": "27x08",
+                    "imagen": "SIMPSONS_TV_ART/27x08.webp"
+                },
+                {
+                    "codigo": "27x09",
+                    "imagen": "SIMPSONS_TV_ART/27x09.webp"
+                },
+                {
+                    "codigo": "27x10",
+                    "imagen": "SIMPSONS_TV_ART/27x10.webp"
+                },
+                {
+                    "codigo": "27x11",
+                    "imagen": "SIMPSONS_TV_ART/27x11.webp"
+                },
+                {
+                    "codigo": "27x12",
+                    "imagen": "SIMPSONS_TV_ART/27x12.webp"
+                },
+                {
+                    "codigo": "27x13",
+                    "imagen": "SIMPSONS_TV_ART/27x13.webp"
+                },
+                {
+                    "codigo": "27x14",
+                    "imagen": "SIMPSONS_TV_ART/27x14.webp"
+                },
+                {
+                    "codigo": "27x15",
+                    "imagen": "SIMPSONS_TV_ART/27x15.webp"
+                },
+                {
+                    "codigo": "27x16",
+                    "imagen": "SIMPSONS_TV_ART/27x16.webp"
+                },
+                {
+                    "codigo": "27x17",
+                    "imagen": "SIMPSONS_TV_ART/27x17.webp"
+                },
+                {
+                    "codigo": "27x18",
+                    "imagen": "SIMPSONS_TV_ART/27x18.webp"
+                },
+                {
+                    "codigo": "27x19",
+                    "imagen": "SIMPSONS_TV_ART/27x19.webp"
+                },
+                {
+                    "codigo": "27x20",
+                    "imagen": "SIMPSONS_TV_ART/27x20.webp"
+                },
+                {
+                    "codigo": "27x21",
+                    "imagen": "SIMPSONS_TV_ART/27x21.webp"
+                },
+                {
+                    "codigo": "27x22",
+                    "imagen": "SIMPSONS_TV_ART/27x22.webp"
+                }
+            ]
+        },
+        {
+            "temporada": 28,
+            "imagen": "SIMPSONS_TV_ART/Season_28_Icon.webp",
+            "capitulos": [
+                {
+                    "codigo": "28x01",
+                    "imagen": "SIMPSONS_TV_ART/28x01.webp"
+                },
+                {
+                    "codigo": "28x02",
+                    "imagen": "SIMPSONS_TV_ART/28x02.webp"
+                },
+                {
+                    "codigo": "28x03",
+                    "imagen": "SIMPSONS_TV_ART/28x03.webp"
+                },
+                {
+                    "codigo": "28x04",
+                    "imagen": "SIMPSONS_TV_ART/28x04.webp"
+                },
+                {
+                    "codigo": "28x05",
+                    "imagen": "SIMPSONS_TV_ART/28x05.webp"
+                },
+                {
+                    "codigo": "28x06",
+                    "imagen": "SIMPSONS_TV_ART/28x06.webp"
+                },
+                {
+                    "codigo": "28x07",
+                    "imagen": "SIMPSONS_TV_ART/28x07.webp"
+                },
+                {
+                    "codigo": "28x08",
+                    "imagen": "SIMPSONS_TV_ART/28x08.webp"
+                },
+                {
+                    "codigo": "28x09",
+                    "imagen": "SIMPSONS_TV_ART/28x09.webp"
+                },
+                {
+                    "codigo": "28x10",
+                    "imagen": "SIMPSONS_TV_ART/28x10.webp"
+                },
+                {
+                    "codigo": "28x11",
+                    "imagen": "SIMPSONS_TV_ART/28x11.webp"
+                },
+                {
+                    "codigo": "28x12",
+                    "imagen": "SIMPSONS_TV_ART/28x12.webp"
+                },
+                {
+                    "codigo": "28x13",
+                    "imagen": "SIMPSONS_TV_ART/28x13.webp"
+                },
+                {
+                    "codigo": "28x14",
+                    "imagen": "SIMPSONS_TV_ART/28x14.webp"
+                },
+                {
+                    "codigo": "28x15",
+                    "imagen": "SIMPSONS_TV_ART/28x15.webp"
+                },
+                {
+                    "codigo": "28x16",
+                    "imagen": "SIMPSONS_TV_ART/28x16.webp"
+                },
+                {
+                    "codigo": "28x17",
+                    "imagen": "SIMPSONS_TV_ART/28x17.webp"
+                },
+                {
+                    "codigo": "28x18",
+                    "imagen": "SIMPSONS_TV_ART/28x18.webp"
+                },
+                {
+                    "codigo": "28x19",
+                    "imagen": "SIMPSONS_TV_ART/28x19.webp"
+                },
+                {
+                    "codigo": "28x20",
+                    "imagen": "SIMPSONS_TV_ART/28x20.webp"
+                },
+                {
+                    "codigo": "28x21",
+                    "imagen": "SIMPSONS_TV_ART/28x21.webp"
+                }
+            ]
+        },
+        {
+            "temporada": 29,
+            "imagen": "SIMPSONS_TV_ART/Season_29_Icon.webp",
+            "capitulos": [
+                {
+                    "codigo": "29x01",
+                    "imagen": "SIMPSONS_TV_ART/29x01.webp"
+                },
+                {
+                    "codigo": "29x02",
+                    "imagen": "SIMPSONS_TV_ART/29x02.webp"
+                },
+                {
+                    "codigo": "29x03",
+                    "imagen": "SIMPSONS_TV_ART/29x03.webp"
+                },
+                {
+                    "codigo": "29x04",
+                    "imagen": "SIMPSONS_TV_ART/29x04.webp"
+                },
+                {
+                    "codigo": "29x05",
+                    "imagen": "SIMPSONS_TV_ART/29x05.webp"
+                },
+                {
+                    "codigo": "29x06",
+                    "imagen": "SIMPSONS_TV_ART/29x06.webp"
+                },
+                {
+                    "codigo": "29x07",
+                    "imagen": "SIMPSONS_TV_ART/29x07.webp"
+                },
+                {
+                    "codigo": "29x08",
+                    "imagen": "SIMPSONS_TV_ART/29x08.webp"
+                },
+                {
+                    "codigo": "29x09",
+                    "imagen": "SIMPSONS_TV_ART/29x09.webp"
+                },
+                {
+                    "codigo": "29x10",
+                    "imagen": "SIMPSONS_TV_ART/29x10.webp"
+                },
+                {
+                    "codigo": "29x11",
+                    "imagen": "SIMPSONS_TV_ART/29x11.webp"
+                },
+                {
+                    "codigo": "29x12",
+                    "imagen": "SIMPSONS_TV_ART/29x12.webp"
+                },
+                {
+                    "codigo": "29x13",
+                    "imagen": "SIMPSONS_TV_ART/29x13.webp"
+                },
+                {
+                    "codigo": "29x14",
+                    "imagen": "SIMPSONS_TV_ART/29x14.webp"
+                },
+                {
+                    "codigo": "29x15",
+                    "imagen": "SIMPSONS_TV_ART/29x15.webp"
+                },
+                {
+                    "codigo": "29x16",
+                    "imagen": "SIMPSONS_TV_ART/29x16.webp"
+                },
+                {
+                    "codigo": "29x17",
+                    "imagen": "SIMPSONS_TV_ART/29x17.webp"
+                },
+                {
+                    "codigo": "29x18",
+                    "imagen": "SIMPSONS_TV_ART/29x18.webp"
+                },
+                {
+                    "codigo": "29x19",
+                    "imagen": "SIMPSONS_TV_ART/29x19.webp"
+                },
+                {
+                    "codigo": "29x20",
+                    "imagen": "SIMPSONS_TV_ART/29x20.webp"
+                },
+                {
+                    "codigo": "29x21",
+                    "imagen": "SIMPSONS_TV_ART/29x21.webp"
+                }
+            ]
+        },
+        {
+            "temporada": 30,
+            "imagen": "SIMPSONS_TV_ART/Season_30_Icon.webp",
+            "capitulos": [
+                {
+                    "codigo": "30x01",
+                    "imagen": "SIMPSONS_TV_ART/30x01.webp"
+                },
+                {
+                    "codigo": "30x02",
+                    "imagen": "SIMPSONS_TV_ART/30x02.webp"
+                },
+                {
+                    "codigo": "30x03",
+                    "imagen": "SIMPSONS_TV_ART/30x03.webp"
+                },
+                {
+                    "codigo": "30x04",
+                    "imagen": "SIMPSONS_TV_ART/30x04.webp"
+                },
+                {
+                    "codigo": "30x05",
+                    "imagen": "SIMPSONS_TV_ART/30x05.webp"
+                },
+                {
+                    "codigo": "30x06",
+                    "imagen": "SIMPSONS_TV_ART/30x06.webp"
+                },
+                {
+                    "codigo": "30x07",
+                    "imagen": "SIMPSONS_TV_ART/30x07.webp"
+                },
+                {
+                    "codigo": "30x08",
+                    "imagen": "SIMPSONS_TV_ART/30x08.webp"
+                },
+                {
+                    "codigo": "30x09",
+                    "imagen": "SIMPSONS_TV_ART/30x09.webp"
+                },
+                {
+                    "codigo": "30x10",
+                    "imagen": "SIMPSONS_TV_ART/30x10.webp"
+                },
+                {
+                    "codigo": "30x11",
+                    "imagen": "SIMPSONS_TV_ART/30x11.webp"
+                },
+                {
+                    "codigo": "30x12",
+                    "imagen": "SIMPSONS_TV_ART/30x12.webp"
+                },
+                {
+                    "codigo": "30x13",
+                    "imagen": "SIMPSONS_TV_ART/30x13.webp"
+                },
+                {
+                    "codigo": "30x14",
+                    "imagen": "SIMPSONS_TV_ART/30x14.webp"
+                },
+                {
+                    "codigo": "30x15",
+                    "imagen": "SIMPSONS_TV_ART/30x15.webp"
+                },
+                {
+                    "codigo": "30x16",
+                    "imagen": "SIMPSONS_TV_ART/30x16.webp"
+                },
+                {
+                    "codigo": "30x17",
+                    "imagen": "SIMPSONS_TV_ART/30x17.webp"
+                },
+                {
+                    "codigo": "30x18",
+                    "imagen": "SIMPSONS_TV_ART/30x18.webp"
+                },
+                {
+                    "codigo": "30x19",
+                    "imagen": "SIMPSONS_TV_ART/30x19.webp"
+                },
+                {
+                    "codigo": "30x20",
+                    "imagen": "SIMPSONS_TV_ART/30x20.webp"
+                },
+                {
+                    "codigo": "30x21",
+                    "imagen": "SIMPSONS_TV_ART/30x21.webp"
+                },
+                {
+                    "codigo": "30x22",
+                    "imagen": "SIMPSONS_TV_ART/30x22.webp"
+                },
+                {
+                    "codigo": "30x23",
+                    "imagen": "SIMPSONS_TV_ART/30x23.webp"
+                }
+            ]
+        },
+        {
+            "temporada": 31,
+            "imagen": "SIMPSONS_TV_ART/Season_31_Icon.webp",
+            "capitulos": [
+                {
+                    "codigo": "31x01",
+                    "imagen": "SIMPSONS_TV_ART/31x01.webp"
+                },
+                {
+                    "codigo": "31x02",
+                    "imagen": "SIMPSONS_TV_ART/31x02.webp"
+                },
+                {
+                    "codigo": "31x03",
+                    "imagen": "SIMPSONS_TV_ART/31x03.webp"
+                },
+                {
+                    "codigo": "31x04",
+                    "imagen": "SIMPSONS_TV_ART/31x04.webp"
+                },
+                {
+                    "codigo": "31x05",
+                    "imagen": "SIMPSONS_TV_ART/31x05.webp"
+                },
+                {
+                    "codigo": "31x06",
+                    "imagen": "SIMPSONS_TV_ART/31x06.webp"
+                },
+                {
+                    "codigo": "31x07",
+                    "imagen": "SIMPSONS_TV_ART/31x07.webp"
+                },
+                {
+                    "codigo": "31x08",
+                    "imagen": "SIMPSONS_TV_ART/31x08.webp"
+                },
+                {
+                    "codigo": "31x09",
+                    "imagen": "SIMPSONS_TV_ART/31x09.webp"
+                },
+                {
+                    "codigo": "31x10",
+                    "imagen": "SIMPSONS_TV_ART/31x10.webp"
+                },
+                {
+                    "codigo": "31x11",
+                    "imagen": "SIMPSONS_TV_ART/31x11.webp"
+                },
+                {
+                    "codigo": "31x12",
+                    "imagen": "SIMPSONS_TV_ART/31x12.webp"
+                },
+                {
+                    "codigo": "31x13",
+                    "imagen": "SIMPSONS_TV_ART/31x13.webp"
+                },
+                {
+                    "codigo": "31x14",
+                    "imagen": "SIMPSONS_TV_ART/31x14.webp"
+                },
+                {
+                    "codigo": "31x15",
+                    "imagen": "SIMPSONS_TV_ART/31x15.webp"
+                },
+                {
+                    "codigo": "31x16",
+                    "imagen": "SIMPSONS_TV_ART/31x16.webp"
+                },
+                {
+                    "codigo": "31x17",
+                    "imagen": "SIMPSONS_TV_ART/31x17.webp"
+                },
+                {
+                    "codigo": "31x18",
+                    "imagen": "SIMPSONS_TV_ART/31x18.webp"
+                },
+                {
+                    "codigo": "31x19",
+                    "imagen": "SIMPSONS_TV_ART/31x19.webp"
+                },
+                {
+                    "codigo": "31x20",
+                    "imagen": "SIMPSONS_TV_ART/31x20.webp"
+                },
+                {
+                    "codigo": "31x21",
+                    "imagen": "SIMPSONS_TV_ART/31x21.webp"
+                },
+                {
+                    "codigo": "31x22",
+                    "imagen": "SIMPSONS_TV_ART/31x22.webp"
+                }
+            ]
+        },
+        {
+            "temporada": 32,
+            "imagen": "SIMPSONS_TV_ART/Season_32_Icon.webp",
+            "capitulos": [
+                {
+                    "codigo": "32x01",
+                    "imagen": "SIMPSONS_TV_ART/32x01.webp"
+                },
+                {
+                    "codigo": "32x02",
+                    "imagen": "SIMPSONS_TV_ART/32x02.webp"
+                },
+                {
+                    "codigo": "32x03",
+                    "imagen": "SIMPSONS_TV_ART/32x03.webp"
+                },
+                {
+                    "codigo": "32x04",
+                    "imagen": "SIMPSONS_TV_ART/32x04.webp"
+                },
+                {
+                    "codigo": "32x05",
+                    "imagen": "SIMPSONS_TV_ART/32x05.webp"
+                },
+                {
+                    "codigo": "32x06",
+                    "imagen": "SIMPSONS_TV_ART/32x06.webp"
+                },
+                {
+                    "codigo": "32x07",
+                    "imagen": "SIMPSONS_TV_ART/32x07.webp"
+                },
+                {
+                    "codigo": "32x08",
+                    "imagen": "SIMPSONS_TV_ART/32x08.webp"
+                },
+                {
+                    "codigo": "32x09",
+                    "imagen": "SIMPSONS_TV_ART/32x09.webp"
+                },
+                {
+                    "codigo": "32x10",
+                    "imagen": "SIMPSONS_TV_ART/32x10.webp"
+                },
+                {
+                    "codigo": "32x11",
+                    "imagen": "SIMPSONS_TV_ART/32x11.webp"
+                },
+                {
+                    "codigo": "32x12",
+                    "imagen": "SIMPSONS_TV_ART/32x12.webp"
+                },
+                {
+                    "codigo": "32x13",
+                    "imagen": "SIMPSONS_TV_ART/32x13.webp"
+                },
+                {
+                    "codigo": "32x14",
+                    "imagen": "SIMPSONS_TV_ART/32x14.webp"
+                },
+                {
+                    "codigo": "32x15",
+                    "imagen": "SIMPSONS_TV_ART/32x15.webp"
+                },
+                {
+                    "codigo": "32x16",
+                    "imagen": "SIMPSONS_TV_ART/32x16.webp"
+                },
+                {
+                    "codigo": "32x17",
+                    "imagen": "SIMPSONS_TV_ART/32x17.webp"
+                },
+                {
+                    "codigo": "32x18",
+                    "imagen": "SIMPSONS_TV_ART/32x18.webp"
+                },
+                {
+                    "codigo": "32x19",
+                    "imagen": "SIMPSONS_TV_ART/32x19.webp"
+                },
+                {
+                    "codigo": "32x20",
+                    "imagen": "SIMPSONS_TV_ART/32x20.webp"
+                },
+                {
+                    "codigo": "32x21",
+                    "imagen": "SIMPSONS_TV_ART/32x21.webp"
+                },
+                {
+                    "codigo": "32x22",
+                    "imagen": "SIMPSONS_TV_ART/32x22.webp"
+                }
+            ]
+        },
+        {
+            "temporada": 33,
+            "imagen": "SIMPSONS_TV_ART/Season_33_Icon.webp",
+            "capitulos": [
+                {
+                    "codigo": "33x01",
+                    "imagen": "SIMPSONS_TV_ART/33x01.webp"
+                },
+                {
+                    "codigo": "33x02",
+                    "imagen": "SIMPSONS_TV_ART/33x02.webp"
+                },
+                {
+                    "codigo": "33x03",
+                    "imagen": "SIMPSONS_TV_ART/33x03.webp"
+                },
+                {
+                    "codigo": "33x04",
+                    "imagen": "SIMPSONS_TV_ART/33x04.webp"
+                },
+                {
+                    "codigo": "33x05",
+                    "imagen": "SIMPSONS_TV_ART/33x05.webp"
+                },
+                {
+                    "codigo": "33x06",
+                    "imagen": "SIMPSONS_TV_ART/33x06.webp"
+                },
+                {
+                    "codigo": "33x07",
+                    "imagen": "SIMPSONS_TV_ART/33x07.webp"
+                },
+                {
+                    "codigo": "33x08",
+                    "imagen": "SIMPSONS_TV_ART/33x08.webp"
+                },
+                {
+                    "codigo": "33x09",
+                    "imagen": "SIMPSONS_TV_ART/33x09.webp"
+                },
+                {
+                    "codigo": "33x10",
+                    "imagen": "SIMPSONS_TV_ART/33x10.webp"
+                },
+                {
+                    "codigo": "33x11",
+                    "imagen": "SIMPSONS_TV_ART/33x11.webp"
+                },
+                {
+                    "codigo": "33x12",
+                    "imagen": "SIMPSONS_TV_ART/33x12.webp"
+                },
+                {
+                    "codigo": "33x13",
+                    "imagen": "SIMPSONS_TV_ART/33x13.webp"
+                },
+                {
+                    "codigo": "33x14",
+                    "imagen": "SIMPSONS_TV_ART/33x14.webp"
+                },
+                {
+                    "codigo": "33x15",
+                    "imagen": "SIMPSONS_TV_ART/33x15.webp"
+                },
+                {
+                    "codigo": "33x16",
+                    "imagen": "SIMPSONS_TV_ART/33x16.webp"
+                },
+                {
+                    "codigo": "33x17",
+                    "imagen": "SIMPSONS_TV_ART/33x17.webp"
+                },
+                {
+                    "codigo": "33x18",
+                    "imagen": "SIMPSONS_TV_ART/33x18.webp"
+                },
+                {
+                    "codigo": "33x19",
+                    "imagen": "SIMPSONS_TV_ART/33x19.webp"
+                },
+                {
+                    "codigo": "33x20",
+                    "imagen": "SIMPSONS_TV_ART/33x20.webp"
+                },
+                {
+                    "codigo": "33x21",
+                    "imagen": "SIMPSONS_TV_ART/33x21.webp"
+                }
+            ]
+        },
+        {
+            "temporada": 34,
+            "imagen": "SIMPSONS_TV_ART/Season_34_Icon.webp",
+            "capitulos": [
+                {
+                    "codigo": "34x01",
+                    "imagen": "SIMPSONS_TV_ART/34x01.webp"
+                },
+                {
+                    "codigo": "34x02",
+                    "imagen": "SIMPSONS_TV_ART/34x02.webp"
+                },
+                {
+                    "codigo": "34x03",
+                    "imagen": "SIMPSONS_TV_ART/34x03.webp"
+                },
+                {
+                    "codigo": "34x04",
+                    "imagen": "SIMPSONS_TV_ART/34x04.webp"
+                },
+                {
+                    "codigo": "34x05",
+                    "imagen": "SIMPSONS_TV_ART/34x05.webp"
+                },
+                {
+                    "codigo": "34x06",
+                    "imagen": "SIMPSONS_TV_ART/34x06.webp"
+                },
+                {
+                    "codigo": "34x07",
+                    "imagen": "SIMPSONS_TV_ART/34x07.webp"
+                },
+                {
+                    "codigo": "34x08",
+                    "imagen": "SIMPSONS_TV_ART/34x08.webp"
+                },
+                {
+                    "codigo": "34x09",
+                    "imagen": "SIMPSONS_TV_ART/34x09.webp"
+                },
+                {
+                    "codigo": "34x10",
+                    "imagen": "SIMPSONS_TV_ART/34x10.webp"
+                },
+                {
+                    "codigo": "34x11",
+                    "imagen": "SIMPSONS_TV_ART/34x11.webp"
+                },
+                {
+                    "codigo": "34x12",
+                    "imagen": "SIMPSONS_TV_ART/34x12.webp"
+                },
+                {
+                    "codigo": "34x13",
+                    "imagen": "SIMPSONS_TV_ART/34x13.webp"
+                },
+                {
+                    "codigo": "34x14",
+                    "imagen": "SIMPSONS_TV_ART/34x14.webp"
+                },
+                {
+                    "codigo": "34x15",
+                    "imagen": "SIMPSONS_TV_ART/34x15.webp"
+                },
+                {
+                    "codigo": "34x16",
+                    "imagen": "SIMPSONS_TV_ART/34x16.webp"
+                },
+                {
+                    "codigo": "34x17",
+                    "imagen": "SIMPSONS_TV_ART/34x17.webp"
+                },
+                {
+                    "codigo": "34x18",
+                    "imagen": "SIMPSONS_TV_ART/34x18.webp"
+                },
+                {
+                    "codigo": "34x19",
+                    "imagen": "SIMPSONS_TV_ART/34x19.webp"
+                },
+                {
+                    "codigo": "34x20",
+                    "imagen": "SIMPSONS_TV_ART/34x20.webp"
+                },
+                {
+                    "codigo": "34x21",
+                    "imagen": "SIMPSONS_TV_ART/34x21.webp"
+                },
+                {
+                    "codigo": "34x22",
+                    "imagen": "SIMPSONS_TV_ART/34x22.webp"
+                }
+            ]
+        },
+        {
+            "temporada": 35,
+            "imagen": "SIMPSONS_TV_ART/Season_35_Icon.webp",
+            "capitulos": [
+                {
+                    "codigo": "35x01",
+                    "imagen": "SIMPSONS_TV_ART/35x01.webp"
+                },
+                {
+                    "codigo": "35x02",
+                    "imagen": "SIMPSONS_TV_ART/35x02.webp"
+                },
+                {
+                    "codigo": "35x03",
+                    "imagen": "SIMPSONS_TV_ART/35x03.webp"
+                },
+                {
+                    "codigo": "35x04",
+                    "imagen": "SIMPSONS_TV_ART/35x04.webp"
+                },
+                {
+                    "codigo": "35x05",
+                    "imagen": "SIMPSONS_TV_ART/35x05.webp"
+                },
+                {
+                    "codigo": "35x06",
+                    "imagen": "SIMPSONS_TV_ART/35x06.webp"
+                },
+                {
+                    "codigo": "35x07",
+                    "imagen": "SIMPSONS_TV_ART/35x07.webp"
+                },
+                {
+                    "codigo": "35x08",
+                    "imagen": "SIMPSONS_TV_ART/35x08.webp"
+                },
+                {
+                    "codigo": "35x09",
+                    "imagen": "SIMPSONS_TV_ART/35x09.webp"
+                },
+                {
+                    "codigo": "35x10",
+                    "imagen": "SIMPSONS_TV_ART/35x10.webp"
+                },
+                {
+                    "codigo": "35x11",
+                    "imagen": "SIMPSONS_TV_ART/35x11.webp"
+                },
+                {
+                    "codigo": "35x12",
+                    "imagen": "SIMPSONS_TV_ART/35x12.webp"
+                },
+                {
+                    "codigo": "35x13",
+                    "imagen": "SIMPSONS_TV_ART/35x13.webp"
+                },
+                {
+                    "codigo": "35x14",
+                    "imagen": "SIMPSONS_TV_ART/35x14.webp"
+                },
+                {
+                    "codigo": "35x15",
+                    "imagen": "SIMPSONS_TV_ART/35x15.webp"
+                },
+                {
+                    "codigo": "35x16",
+                    "imagen": "SIMPSONS_TV_ART/35x16.webp"
+                },
+                {
+                    "codigo": "35x17",
+                    "imagen": "SIMPSONS_TV_ART/35x17.webp"
+                },
+                {
+                    "codigo": "35x18",
+                    "imagen": "SIMPSONS_TV_ART/35x18.webp"
+                }
+            ]
+        }
+    ]
+}
