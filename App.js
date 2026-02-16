@@ -260,6 +260,7 @@ const styles = StyleSheet.create({
   albumList: {
     paddingHorizontal: (width - ALBUM_CARD_WIDTH) / 2,
     paddingVertical: 12,
+    marginTop: 28,
   },
   albumCardWrap: {
     width: ALBUM_CARD_WIDTH,
@@ -350,6 +351,7 @@ const styles = StyleSheet.create({
     flex: 1,
     margin: 8,
     maxWidth: '46%',
+    aspectRatio: 1,
     backgroundColor: '#FFF4B7',
     borderWidth: 2,
     borderColor: SimpsonPalette.orange,
@@ -363,10 +365,14 @@ const styles = StyleSheet.create({
   },
   photoImage: {
     width: '100%',
-    aspectRatio: 1,
+    height: '100%',
   },
   photoLabel: {
-    backgroundColor: SimpsonPalette.pink,
+    position: 'absolute',
+    left: 0,
+    right: 0,
+    bottom: 0,
+    backgroundColor: 'rgba(255, 114, 176, 0.92)',
     paddingVertical: 8,
     alignItems: 'center',
   },
@@ -379,6 +385,8 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     backgroundColor: '#ffe570',
+    width: '100%',
+    height: '100%',
   },
   fallbackText: {
     fontWeight: '800',
