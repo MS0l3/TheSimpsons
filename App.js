@@ -16,17 +16,18 @@ import assetMap from './assetMap';
 import serie from './serie.json';
 
 const { width } = Dimensions.get('window');
-const ALBUM_CARD_WIDTH = Math.min(width * 0.56, 250);
-const ALBUM_SPACING = 16;
+const ALBUM_CARD_WIDTH = Math.min(width * 0.6, 265);
+const ALBUM_SPACING = 18;
 const ALBUM_SNAP = ALBUM_CARD_WIDTH + ALBUM_SPACING;
 
 const SimpsonPalette = {
-  sky: '#74C9FF',
+  sky: '#72C9FF',
   cloud: '#EAF7FF',
   yellow: '#FFD90F',
   pink: '#FF72B0',
+  orange: '#F28C28',
   black: '#121212',
-  darkBlue: '#114866',
+  navy: '#114866',
 };
 
 const assetMapLower = Object.fromEntries(
@@ -51,8 +52,11 @@ const resolveAsset = (assetPath) => {
   return assetMapLower[normalized] || null;
 };
 
+const DecorativeCloud = ({ style }) => <View style={[styles.cloud, style]} />;
+
 export default function App() {
   const temporadas = serie.temporadas || [];
+  const [screen, setScreen] = useState('seasons');
   const [selectedSeason, setSelectedSeason] = useState(0);
   const scrollX = useRef(new Animated.Value(0)).current;
   const seasonListRef = useRef(null);
@@ -70,109 +74,139 @@ export default function App() {
     });
   };
 
+  const openEpisodes = () => {
+    if (temporadaActiva) {
+      setScreen('episodes');
+    }
+  };
+
   return (
     <SafeAreaView style={styles.container}>
       <StatusBar style="dark" />
+      <DecorativeCloud style={styles.cloudOne} />
+      <DecorativeCloud style={styles.cloudTwo} />
 
-      <View style={styles.header}>
-        <Text style={styles.title}>Control Remoto Simpson</Text>
-        <Text style={styles.subtitle}>Temporadas y capítulos</Text>
-      </View>
-
-      <Animated.FlatList
-        ref={seasonListRef}
-        data={temporadas}
-        keyExtractor={(item) => `season-${item.temporada}`}
-        horizontal
-        showsHorizontalScrollIndicator={false}
-        snapToInterval={ALBUM_SNAP}
-        decelerationRate="fast"
-        bounces={false}
-        contentContainerStyle={styles.albumList}
-        onMomentumScrollEnd={(event) => {
-          const offset = event.nativeEvent.contentOffset.x;
-          const index = Math.round(offset / ALBUM_SNAP);
-          setSelectedSeason(Math.max(0, Math.min(index, temporadas.length - 1)));
-        }}
-        onScroll={Animated.event(
-          [{ nativeEvent: { contentOffset: { x: scrollX } } }],
-          { useNativeDriver: true }
-        )}
-        scrollEventThrottle={16}
-        renderItem={({ item, index }) => {
-          const inputRange = [
-            (index - 1) * ALBUM_SNAP,
-            index * ALBUM_SNAP,
-            (index + 1) * ALBUM_SNAP,
-          ];
-
-          const scale = scrollX.interpolate({
-            inputRange,
-            outputRange: [0.82, 1, 0.82],
-            extrapolate: 'clamp',
-          });
-
-          const opacity = scrollX.interpolate({
-            inputRange,
-            outputRange: [0.55, 1, 0.55],
-            extrapolate: 'clamp',
-          });
-
-          const isSelected = index === selectedSeason;
-          const seasonArt = resolveAsset(item.imagen);
-
-          return (
-            <TouchableOpacity
-              activeOpacity={0.9}
-              onPress={() => onSeasonPress(index)}
-              style={styles.albumCardWrap}
-            >
-              <Animated.View style={[styles.albumCard, { transform: [{ scale }], opacity }]}>
-                {seasonArt ? (
-                  <Image source={seasonArt} style={styles.albumImage} resizeMode="cover" />
-                ) : (
-                  <View style={[styles.albumImage, styles.fallbackImage]}>
-                    <Text style={styles.fallbackText}>Temporada {item.temporada}</Text>
-                  </View>
-                )}
-
-                <View style={styles.albumLabel}>
-                  <Text style={styles.albumText}>Temporada {item.temporada}</Text>
-                  {isSelected && <Text style={styles.selectedBadge}>Seleccionada</Text>}
-                </View>
-              </Animated.View>
-            </TouchableOpacity>
-          );
-        }}
-      />
-
-      {temporadaActiva && (
+      {screen === 'seasons' ? (
         <>
-          <View style={styles.episodesHeader}>
-            <Text style={styles.episodesTitle}>Capítulos T{temporadaActiva.temporada}</Text>
-            <Text style={styles.episodesCount}>{temporadaActiva.capitulos.length} episodios</Text>
+          <View style={styles.header}>
+            <Text style={styles.title}>Temporadas</Text>
+            <Text style={styles.subtitle}>Elige una temporada de Los Simpson</Text>
+          </View>
+
+          <Animated.FlatList
+            ref={seasonListRef}
+            data={temporadas}
+            keyExtractor={(item) => `season-${item.temporada}`}
+            horizontal
+            showsHorizontalScrollIndicator={false}
+            snapToInterval={ALBUM_SNAP}
+            decelerationRate="fast"
+            bounces={false}
+            contentContainerStyle={styles.albumList}
+            onMomentumScrollEnd={(event) => {
+              const offset = event.nativeEvent.contentOffset.x;
+              const index = Math.round(offset / ALBUM_SNAP);
+              setSelectedSeason(Math.max(0, Math.min(index, temporadas.length - 1)));
+            }}
+            onScroll={Animated.event(
+              [{ nativeEvent: { contentOffset: { x: scrollX } } }],
+              { useNativeDriver: true }
+            )}
+            scrollEventThrottle={16}
+            renderItem={({ item, index }) => {
+              const inputRange = [
+                (index - 1) * ALBUM_SNAP,
+                index * ALBUM_SNAP,
+                (index + 1) * ALBUM_SNAP,
+              ];
+
+              const scale = scrollX.interpolate({
+                inputRange,
+                outputRange: [0.8, 1, 0.8],
+                extrapolate: 'clamp',
+              });
+
+              const opacity = scrollX.interpolate({
+                inputRange,
+                outputRange: [0.55, 1, 0.55],
+                extrapolate: 'clamp',
+              });
+
+              const seasonArt = resolveAsset(item.imagen);
+              const isSelected = index === selectedSeason;
+
+              return (
+                <TouchableOpacity
+                  activeOpacity={0.9}
+                  onPress={() => onSeasonPress(index)}
+                  style={styles.albumCardWrap}
+                >
+                  <Animated.View style={[styles.albumCard, { transform: [{ scale }], opacity }]}> 
+                    {seasonArt ? (
+                      <Image source={seasonArt} style={styles.albumImage} resizeMode="cover" />
+                    ) : (
+                      <View style={[styles.albumImage, styles.fallbackImage]}>
+                        <Text style={styles.fallbackText}>Temporada {item.temporada}</Text>
+                      </View>
+                    )}
+
+                    <View style={styles.albumLabel}>
+                      <Text style={styles.albumText}>Temporada {item.temporada}</Text>
+                      {isSelected && <Text style={styles.selectedBadge}>Seleccionada</Text>}
+                    </View>
+                  </Animated.View>
+                </TouchableOpacity>
+              );
+            }}
+          />
+
+          <View style={styles.footerBox}>
+            <Text style={styles.footerText}>
+              Temporada activa: {temporadaActiva?.temporada ?? '-'}
+            </Text>
+            <TouchableOpacity style={styles.primaryButton} onPress={openEpisodes} activeOpacity={0.9}>
+              <Text style={styles.primaryButtonText}>Ver capítulos</Text>
+            </TouchableOpacity>
+          </View>
+        </>
+      ) : (
+        <>
+          <View style={styles.header}> 
+            <Text style={styles.title}>Capítulos T{temporadaActiva?.temporada}</Text>
+            <Text style={styles.subtitle}>Fotos cuadradas estilo álbum</Text>
+          </View>
+
+          <View style={styles.episodesActionsRow}>
+            <TouchableOpacity
+              style={styles.secondaryButton}
+              onPress={() => setScreen('seasons')}
+              activeOpacity={0.9}
+            >
+              <Text style={styles.secondaryButtonText}>← Volver a temporadas</Text>
+            </TouchableOpacity>
+            <Text style={styles.episodesCounter}>{temporadaActiva?.capitulos.length ?? 0} episodios</Text>
           </View>
 
           <FlatList
-            data={temporadaActiva.capitulos}
+            data={temporadaActiva?.capitulos || []}
             keyExtractor={(item) => item.codigo}
-            numColumns={3}
+            numColumns={2}
             contentContainerStyle={styles.episodesGrid}
             showsVerticalScrollIndicator={false}
             renderItem={({ item }) => {
               const chapterArt = resolveAsset(item.imagen);
 
               return (
-                <TouchableOpacity style={styles.episodeCard} activeOpacity={0.9}>
+                <TouchableOpacity style={styles.photoCard} activeOpacity={0.9}>
                   {chapterArt ? (
-                    <Image source={chapterArt} style={styles.episodeImage} resizeMode="cover" />
+                    <Image source={chapterArt} style={styles.photoImage} resizeMode="cover" />
                   ) : (
-                    <View style={[styles.episodeImage, styles.fallbackImage]}>
+                    <View style={[styles.photoImage, styles.fallbackImage]}>
                       <Text style={styles.fallbackText}>{item.codigo}</Text>
                     </View>
                   )}
-                  <View style={styles.episodeCodeContainer}>
-                    <Text style={styles.episodeCode}>{item.codigo}</Text>
+                  <View style={styles.photoLabel}>
+                    <Text style={styles.photoLabelText}>{item.codigo}</Text>
                   </View>
                 </TouchableOpacity>
               );
@@ -191,23 +225,41 @@ const styles = StyleSheet.create({
   },
   header: {
     paddingHorizontal: 20,
-    paddingTop: 12,
-    marginBottom: 4,
+    paddingTop: 10,
+    marginBottom: 6,
   },
   title: {
     color: SimpsonPalette.black,
-    fontSize: 28,
+    fontSize: 30,
     fontWeight: '900',
   },
   subtitle: {
-    color: SimpsonPalette.darkBlue,
+    color: SimpsonPalette.navy,
     fontSize: 16,
-    marginTop: 2,
     fontWeight: '700',
+    marginTop: 2,
+  },
+  cloud: {
+    position: 'absolute',
+    width: 94,
+    height: 44,
+    borderRadius: 30,
+    backgroundColor: SimpsonPalette.cloud,
+    opacity: 0.9,
+  },
+  cloudOne: {
+    top: 36,
+    right: 22,
+  },
+  cloudTwo: {
+    top: 88,
+    left: 30,
+    width: 72,
+    height: 34,
   },
   albumList: {
     paddingHorizontal: (width - ALBUM_CARD_WIDTH) / 2,
-    paddingVertical: 14,
+    paddingVertical: 12,
   },
   albumCardWrap: {
     width: ALBUM_CARD_WIDTH,
@@ -220,14 +272,14 @@ const styles = StyleSheet.create({
     borderWidth: 3,
     borderColor: SimpsonPalette.yellow,
     shadowColor: '#004f7d',
-    shadowOffset: { width: 0, height: 6 },
+    shadowOffset: { width: 0, height: 5 },
     shadowOpacity: 0.25,
     shadowRadius: 10,
     elevation: 7,
   },
   albumImage: {
     width: '100%',
-    height: ALBUM_CARD_WIDTH * 1.22,
+    height: ALBUM_CARD_WIDTH * 1.2,
   },
   albumLabel: {
     padding: 10,
@@ -243,47 +295,82 @@ const styles = StyleSheet.create({
     fontWeight: '800',
     color: '#8A2A55',
   },
-  episodesHeader: {
-    marginTop: 6,
-    marginBottom: 8,
+  footerBox: {
+    marginTop: 8,
     paddingHorizontal: 20,
+    paddingBottom: 16,
+  },
+  footerText: {
+    fontWeight: '700',
+    color: SimpsonPalette.navy,
+    marginBottom: 10,
+  },
+  primaryButton: {
+    backgroundColor: SimpsonPalette.pink,
+    paddingVertical: 12,
+    borderRadius: 14,
+    alignItems: 'center',
+    borderWidth: 2,
+    borderColor: '#fff1f9',
+  },
+  primaryButtonText: {
+    color: '#fff',
+    fontWeight: '900',
+    fontSize: 16,
+  },
+  episodesActionsRow: {
+    paddingHorizontal: 16,
+    marginBottom: 6,
     flexDirection: 'row',
     justifyContent: 'space-between',
-    alignItems: 'baseline',
+    alignItems: 'center',
+    gap: 10,
   },
-  episodesTitle: {
-    fontSize: 22,
-    fontWeight: '900',
+  secondaryButton: {
+    backgroundColor: SimpsonPalette.yellow,
+    paddingVertical: 10,
+    paddingHorizontal: 12,
+    borderRadius: 12,
+    borderWidth: 2,
+    borderColor: '#ffe875',
+  },
+  secondaryButtonText: {
     color: SimpsonPalette.black,
+    fontWeight: '900',
   },
-  episodesCount: {
-    fontWeight: '700',
-    color: SimpsonPalette.darkBlue,
+  episodesCounter: {
+    color: SimpsonPalette.navy,
+    fontWeight: '800',
   },
   episodesGrid: {
-    paddingHorizontal: 14,
+    paddingHorizontal: 10,
     paddingBottom: 24,
   },
-  episodeCard: {
+  photoCard: {
     flex: 1,
-    margin: 6,
-    maxWidth: '31%',
+    margin: 8,
+    maxWidth: '46%',
+    backgroundColor: '#FFF4B7',
+    borderWidth: 2,
+    borderColor: SimpsonPalette.orange,
     borderRadius: 14,
     overflow: 'hidden',
-    borderWidth: 2,
-    borderColor: SimpsonPalette.pink,
-    backgroundColor: '#FFF2A8',
+    shadowColor: '#5f3a00',
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.22,
+    shadowRadius: 4,
+    elevation: 4,
   },
-  episodeImage: {
+  photoImage: {
     width: '100%',
     aspectRatio: 1,
   },
-  episodeCodeContainer: {
+  photoLabel: {
     backgroundColor: SimpsonPalette.pink,
-    paddingVertical: 6,
+    paddingVertical: 8,
     alignItems: 'center',
   },
-  episodeCode: {
+  photoLabelText: {
     color: '#fff',
     fontWeight: '900',
     letterSpacing: 0.5,
