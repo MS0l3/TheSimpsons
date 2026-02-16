@@ -266,7 +266,7 @@ const styles = StyleSheet.create({
   },
   albumList: {
     paddingHorizontal: (width - ALBUM_CARD_WIDTH) / 2,
-    paddingTop: 32,
+    paddingTop: 170,
     paddingBottom: 8,
   },
   albumCardWrap: {
