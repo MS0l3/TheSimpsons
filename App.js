@@ -258,11 +258,15 @@ export default function App() {
           </View>
 
           <View style={styles.detailCard}>
+            <View style={styles.detailContent}>
+              <Text style={styles.detailTitle}>{episodioInfo?.titulo ?? 'Capítulo'}</Text>
+            </View>
+
             {selectedEpisode && resolveAsset(selectedEpisode.imagen) ? (
               <Image
                 source={resolveAsset(selectedEpisode.imagen)}
                 style={styles.detailImage}
-                resizeMode="cover"
+                resizeMode="contain"
               />
             ) : (
               <View style={[styles.detailImage, styles.fallbackImage]}>
@@ -271,7 +275,6 @@ export default function App() {
             )}
 
             <View style={styles.detailContent}>
-              <Text style={styles.detailTitle}>{episodioInfo?.titulo ?? 'Capítulo'}</Text>
               <Text style={styles.detailDescription}>{episodioInfo?.descripcion ?? ''}</Text>
 
               <TouchableOpacity style={styles.playButton} activeOpacity={0.9}>
@@ -464,7 +467,8 @@ const styles = StyleSheet.create({
   },
   detailImage: {
     width: '100%',
-    aspectRatio: 16 / 9,
+    height: 260,
+    backgroundColor: '#fff2b8',
   },
   detailContent: {
     padding: 14,
