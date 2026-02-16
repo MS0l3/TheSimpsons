@@ -234,6 +234,7 @@ const styles = StyleSheet.create({
     color: SimpsonPalette.black,
     fontSize: 30,
     fontWeight: '900',
+    paddingTop:30
   },
   subtitle: {
     color: SimpsonPalette.navy,
