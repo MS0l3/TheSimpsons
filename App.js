@@ -261,11 +261,13 @@ const styles = StyleSheet.create({
   },
   seasonsCenterZone: {
     flex: 1,
-    justifyContent: 'center',
+    justifyContent: 'flex-end',
+    paddingBottom: 28,
   },
   albumList: {
     paddingHorizontal: (width - ALBUM_CARD_WIDTH) / 2,
-    paddingVertical: 12,
+    paddingTop: 32,
+    paddingBottom: 8,
   },
   albumCardWrap: {
     width: ALBUM_CARD_WIDTH,
@@ -302,9 +304,9 @@ const styles = StyleSheet.create({
     color: '#8A2A55',
   },
   footerBox: {
-    marginTop: 14,
+    marginTop: 18,
     paddingHorizontal: 20,
-    paddingBottom: 16,
+    paddingBottom: 24,
   },
   footerText: {
     fontWeight: '700',
