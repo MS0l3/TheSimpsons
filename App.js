@@ -82,7 +82,7 @@ export default function App() {
 
   return (
     <SafeAreaView style={styles.container}>
-      <StatusBar style="dark" />
+      <StatusBar style="dark" hidden />
       <DecorativeCloud style={styles.cloudOne} />
       <DecorativeCloud style={styles.cloudTwo} />
 
@@ -93,6 +93,7 @@ export default function App() {
             <Text style={styles.subtitle}>Elige una temporada de Los Simpson</Text>
           </View>
 
+          <View style={styles.seasonsCenterZone}>
           <Animated.FlatList
             ref={seasonListRef}
             data={temporadas}
@@ -167,6 +168,7 @@ export default function App() {
             <TouchableOpacity style={styles.primaryButton} onPress={openEpisodes} activeOpacity={0.9}>
               <Text style={styles.primaryButtonText}>Ver capítulos</Text>
             </TouchableOpacity>
+          </View>
           </View>
         </>
       ) : (
@@ -257,10 +259,13 @@ const styles = StyleSheet.create({
     width: 72,
     height: 34,
   },
+  seasonsCenterZone: {
+    flex: 1,
+    justifyContent: 'center',
+  },
   albumList: {
     paddingHorizontal: (width - ALBUM_CARD_WIDTH) / 2,
     paddingVertical: 12,
-    marginTop: 28,
   },
   albumCardWrap: {
     width: ALBUM_CARD_WIDTH,
@@ -297,7 +302,7 @@ const styles = StyleSheet.create({
     color: '#8A2A55',
   },
   footerBox: {
-    marginTop: 8,
+    marginTop: 14,
     paddingHorizontal: 20,
     paddingBottom: 16,
   },
