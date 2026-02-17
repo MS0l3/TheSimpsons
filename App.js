@@ -55,7 +55,33 @@ const resolveAsset = (assetPath) => {
 const DecorativeCloud = ({ style }) => <View style={[styles.cloud, style]} />;
 
 export default function App() {
-  const temporadas = Array.isArray(simpsons) ? simpsons : simpsons.temporadas || [];
+  const temporadas = useMemo(() => {
+    if (Array.isArray(simpsons)) {
+      return simpsons;
+    }
+
+    if (Array.isArray(simpsons?.temporadas)) {
+      return simpsons.temporadas;
+    }
+
+    if (Array.isArray(simpsons?.seasons)) {
+      return simpsons.seasons.map((season) => ({
+        temporada: season.temporada ?? season.id,
+        imagen: season.imagen ?? season.image,
+        capitulos: (season.capitulos || season.episodes || []).map((episode) => ({
+          codigo: episode.codigo ?? episode.id,
+          title: episode.title ?? episode.titulo,
+          duration: episode.duration,
+          airDate: episode.airDate,
+          imagen: episode.imagen ?? episode.image,
+          synopsis: episode.synopsis ?? episode.sinopsis,
+        })),
+      }));
+    }
+
+    return [];
+  }, []);
+
   const [screen, setScreen] = useState('seasons');
   const [selectedSeason, setSelectedSeason] = useState(0);
   const [selectedEpisode, setSelectedEpisode] = useState(null);
