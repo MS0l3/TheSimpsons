@@ -55,7 +55,7 @@ const resolveAsset = (assetPath) => {
 const DecorativeCloud = ({ style }) => <View style={[styles.cloud, style]} />;
 
 export default function App() {
-  const temporadas = simpsons.temporadas || [];
+  const temporadas = Array.isArray(simpsons) ? simpsons : simpsons.temporadas || [];
   const [screen, setScreen] = useState('seasons');
   const [selectedSeason, setSelectedSeason] = useState(0);
   const [selectedEpisode, setSelectedEpisode] = useState(null);
@@ -244,7 +244,7 @@ export default function App() {
 
           <View style={styles.detailCard}>
             <View style={styles.detailContent}>
-              <Text style={styles.detailTitle}>{selectedEpisode?.title || 'Sin título'}</Text>
+              <Text style={styles.detailTitle}>{selectedEpisode?.title || selectedEpisode?.titulo || selectedEpisode?.codigo || 'Sin título'}</Text>
             </View>
 
             <View style={styles.detailImageWrap}>
@@ -270,7 +270,7 @@ export default function App() {
                 <Text style={styles.metaLabel}>Air date: {selectedEpisode?.airDate ?? '-'}</Text>
               </View>
 
-              <Text style={styles.detailDescription}>{selectedEpisode?.synopsis || 'Sin synopsis disponible.'}</Text>
+              <Text style={styles.detailDescription}>{selectedEpisode?.synopsis || selectedEpisode?.sinopsis || ''}</Text>
 
               <TouchableOpacity style={styles.playButton} activeOpacity={0.9}>
                 <Text style={styles.playButtonText}>Reproducir en Raspberry</Text>
