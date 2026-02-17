@@ -6,6 +6,7 @@ import {
   FlatList,
   Image,
   SafeAreaView,
+  ScrollView,
   StyleSheet,
   Text,
   TouchableOpacity,
@@ -39,17 +40,32 @@ const resolveAsset = (assetPath) => {
     return null;
   }
 
-  const direct = assetMap[assetPath];
-  if (direct) {
-    return direct;
+  const candidatePaths = [
+    assetPath,
+    `SIMPSONS_TV_ART/${assetPath}`,
+  ];
+
+  for (const candidate of candidatePaths) {
+    const direct = assetMap[candidate];
+    if (direct) {
+      return direct;
+    }
   }
 
-  const normalized = assetPath
-    .replace('Season_30_Icon.webp', 'Season_30_icon.webp')
-    .replace('Season_35_Icon.webp', 'Season_35_artwork.webp')
-    .toLowerCase();
+  const normalizedCandidates = candidatePaths.map((candidate) =>
+    candidate
+      .replace('Season_30_Icon.webp', 'Season_30_icon.webp')
+      .replace('Season_35_Icon.webp', 'Season_35_artwork.webp')
+      .toLowerCase()
+  );
 
-  return assetMapLower[normalized] || null;
+  for (const candidate of normalizedCandidates) {
+    if (assetMapLower[candidate]) {
+      return assetMapLower[candidate];
+    }
+  }
+
+  return null;
 };
 
 const DecorativeCloud = ({ style }) => <View style={[styles.cloud, style]} />;
@@ -268,41 +284,47 @@ export default function App() {
             </TouchableOpacity>
           </View>
 
-          <View style={styles.detailCard}>
-            <View style={styles.detailContent}>
-              <Text style={styles.detailTitle}>{selectedEpisode?.title || selectedEpisode?.titulo || selectedEpisode?.codigo || 'Sin título'}</Text>
-            </View>
+          <ScrollView
+            style={styles.detailScroll}
+            contentContainerStyle={styles.detailScrollContent}
+            showsVerticalScrollIndicator={false}
+          >
+            <View style={styles.detailCard}>
+              <View style={styles.detailContent}>
+                <Text style={styles.detailTitle}>{selectedEpisode?.title || selectedEpisode?.titulo || selectedEpisode?.codigo || 'Sin título'}</Text>
+              </View>
 
-            <View style={styles.detailImageWrap}>
-              {selectedEpisode && resolveAsset(selectedEpisode.imagen) ? (
-                <Image
-                  source={resolveAsset(selectedEpisode.imagen)}
-                  style={styles.detailImage}
-                  resizeMode="contain"
-                />
-              ) : (
-                <View style={[styles.detailImage, styles.fallbackImage]}>
-                  <Text style={styles.fallbackText}>{selectedEpisode?.codigo ?? 'Sin imagen'}</Text>
+              <View style={styles.detailImageWrap}>
+                {selectedEpisode && resolveAsset(selectedEpisode.imagen) ? (
+                  <Image
+                    source={resolveAsset(selectedEpisode.imagen)}
+                    style={styles.detailImage}
+                    resizeMode="contain"
+                  />
+                ) : (
+                  <View style={[styles.detailImage, styles.fallbackImage]}>
+                    <Text style={styles.fallbackText}>{selectedEpisode?.codigo ?? 'Sin imagen'}</Text>
+                  </View>
+                )}
+
+                <View style={styles.durationBadge}>
+                  <Text style={styles.durationText}>{selectedEpisode?.duration ?? '-'}</Text>
                 </View>
-              )}
-
-              <View style={styles.durationBadge}>
-                <Text style={styles.durationText}>{selectedEpisode?.duration ?? '-'}</Text>
-              </View>
-            </View>
-
-            <View style={styles.detailContent}>
-              <View style={styles.metaRow}>
-                <Text style={styles.metaLabel}>Air date: {selectedEpisode?.airDate ?? '-'}</Text>
               </View>
 
-              <Text style={styles.detailDescription}>{selectedEpisode?.synopsis || selectedEpisode?.sinopsis || ''}</Text>
+              <View style={styles.detailContent}>
+                <View style={styles.metaRow}>
+                  <Text style={styles.metaLabel}>Air date: {selectedEpisode?.airDate ?? '-'}</Text>
+                </View>
 
-              <TouchableOpacity style={styles.playButton} activeOpacity={0.9}>
-                <Text style={styles.playButtonText}>Reproducir en Raspberry</Text>
-              </TouchableOpacity>
+                <Text style={styles.detailDescription}>{selectedEpisode?.synopsis || selectedEpisode?.sinopsis || ''}</Text>
+
+                <TouchableOpacity style={styles.playButton} activeOpacity={0.9}>
+                  <Text style={styles.playButtonText}>Reproducir en Raspberry</Text>
+                </TouchableOpacity>
+              </View>
             </View>
-          </View>
+          </ScrollView>
         </>
       )}
     </SafeAreaView>
@@ -476,6 +498,12 @@ const styles = StyleSheet.create({
     color: '#fff',
     fontWeight: '900',
     letterSpacing: 0.5,
+  },
+  detailScroll: {
+    flex: 1,
+  },
+  detailScrollContent: {
+    paddingBottom: 24,
   },
   detailCard: {
     marginHorizontal: 16,
