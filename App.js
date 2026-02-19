@@ -1,5 +1,5 @@
 import { StatusBar } from 'expo-status-bar';
-import { useMemo, useRef, useState } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
 import {
   Animated,
   Dimensions,
@@ -7,6 +7,7 @@ import {
   Image,
   SafeAreaView,
   ScrollView,
+  Platform,
   StyleSheet,
   Text,
   TouchableOpacity,
@@ -70,6 +71,38 @@ const resolveAsset = (assetPath) => {
 
 const DecorativeCloud = ({ style }) => <View style={[styles.cloud, style]} />;
 
+const SEEN_EPISODES_STORAGE_KEY = 'simpsons_seen_episodes.json';
+
+const readSeenEpisodesFromJson = async () => {
+  if (Platform.OS !== 'web' || typeof localStorage === 'undefined') {
+    return {};
+  }
+
+  try {
+    const content = localStorage.getItem(SEEN_EPISODES_STORAGE_KEY);
+    if (!content) {
+      return {};
+    }
+
+    const parsed = JSON.parse(content);
+    return parsed && typeof parsed === 'object' ? parsed : {};
+  } catch {
+    return {};
+  }
+};
+
+const writeSeenEpisodesToJson = async (seenEpisodes) => {
+  if (Platform.OS !== 'web' || typeof localStorage === 'undefined') {
+    return;
+  }
+
+  try {
+    localStorage.setItem(SEEN_EPISODES_STORAGE_KEY, JSON.stringify(seenEpisodes));
+  } catch {
+    // ignore write errors
+  }
+};
+
 export default function App() {
   const temporadas = useMemo(() => {
     if (Array.isArray(simpsons)) {
@@ -102,6 +135,27 @@ export default function App() {
   const [selectedSeason, setSelectedSeason] = useState(0);
   const [selectedEpisode, setSelectedEpisode] = useState(null);
   const [seenEpisodes, setSeenEpisodes] = useState({});
+
+  useEffect(() => {
+    let cancelled = false;
+
+    const loadSeenEpisodes = async () => {
+      const storedSeenEpisodes = await readSeenEpisodesFromJson();
+      if (!cancelled) {
+        setSeenEpisodes(storedSeenEpisodes);
+      }
+    };
+
+    loadSeenEpisodes();
+
+    return () => {
+      cancelled = true;
+    };
+  }, []);
+
+  useEffect(() => {
+    writeSeenEpisodesToJson(seenEpisodes);
+  }, [seenEpisodes]);
   const scrollX = useRef(new Animated.Value(0)).current;
   const seasonListRef = useRef(null);
 
