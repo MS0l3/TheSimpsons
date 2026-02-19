@@ -1,5 +1,6 @@
 import { StatusBar } from 'expo-status-bar';
 import { useEffect, useMemo, useRef, useState } from 'react';
+import * as FileSystem from 'expo-file-system';
 import {
   Animated,
   Dimensions,
@@ -7,7 +8,6 @@ import {
   Image,
   SafeAreaView,
   ScrollView,
-  Platform,
   StyleSheet,
   Text,
   TouchableOpacity,
@@ -71,20 +71,25 @@ const resolveAsset = (assetPath) => {
 
 const DecorativeCloud = ({ style }) => <View style={[styles.cloud, style]} />;
 
-const SEEN_EPISODES_STORAGE_KEY = 'simpsons_seen_episodes.json';
+const SEEN_EPISODES_FILE_NAME = 'simpsons_seen_episodes.json';
+const SEEN_EPISODES_FILE_URI = `${FileSystem.documentDirectory}${SEEN_EPISODES_FILE_NAME}`;
+
+const ensureSeenEpisodesJsonExists = async () => {
+  try {
+    const info = await FileSystem.getInfoAsync(SEEN_EPISODES_FILE_URI);
+    if (!info.exists) {
+      await FileSystem.writeAsStringAsync(SEEN_EPISODES_FILE_URI, '{}');
+    }
+  } catch {
+    // ignore initialization errors
+  }
+};
 
 const readSeenEpisodesFromJson = async () => {
-  if (Platform.OS !== 'web' || typeof localStorage === 'undefined') {
-    return {};
-  }
-
   try {
-    const content = localStorage.getItem(SEEN_EPISODES_STORAGE_KEY);
-    if (!content) {
-      return {};
-    }
-
-    const parsed = JSON.parse(content);
+    await ensureSeenEpisodesJsonExists();
+    const content = await FileSystem.readAsStringAsync(SEEN_EPISODES_FILE_URI);
+    const parsed = JSON.parse(content || '{}');
     return parsed && typeof parsed === 'object' ? parsed : {};
   } catch {
     return {};
@@ -92,12 +97,12 @@ const readSeenEpisodesFromJson = async () => {
 };
 
 const writeSeenEpisodesToJson = async (seenEpisodes) => {
-  if (Platform.OS !== 'web' || typeof localStorage === 'undefined') {
-    return;
-  }
-
   try {
-    localStorage.setItem(SEEN_EPISODES_STORAGE_KEY, JSON.stringify(seenEpisodes));
+    await ensureSeenEpisodesJsonExists();
+    await FileSystem.writeAsStringAsync(
+      SEEN_EPISODES_FILE_URI,
+      JSON.stringify(seenEpisodes)
+    );
   } catch {
     // ignore write errors
   }
