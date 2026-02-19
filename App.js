@@ -101,6 +101,7 @@ export default function App() {
   const [screen, setScreen] = useState('seasons');
   const [selectedSeason, setSelectedSeason] = useState(0);
   const [selectedEpisode, setSelectedEpisode] = useState(null);
+  const [seenEpisodes, setSeenEpisodes] = useState({});
   const scrollX = useRef(new Animated.Value(0)).current;
   const seasonListRef = useRef(null);
 
@@ -130,6 +131,20 @@ export default function App() {
 
   const closeEpisodeDetail = () => {
     setScreen('episodes');
+  };
+
+  const selectedEpisodeCode = selectedEpisode?.codigo || selectedEpisode?.id || '';
+  const isSelectedEpisodeSeen = Boolean(selectedEpisodeCode && seenEpisodes[selectedEpisodeCode]);
+
+  const toggleSelectedEpisodeSeen = () => {
+    if (!selectedEpisodeCode) {
+      return;
+    }
+
+    setSeenEpisodes((prev) => ({
+      ...prev,
+      [selectedEpisodeCode]: !prev[selectedEpisodeCode],
+    }));
   };
 
   return (
@@ -281,6 +296,14 @@ export default function App() {
           <View style={styles.episodesActionsRow}>
             <TouchableOpacity style={styles.secondaryButton} onPress={closeEpisodeDetail} activeOpacity={0.9}>
               <Text style={styles.secondaryButtonText}>← Volver a capítulos</Text>
+            </TouchableOpacity>
+
+            <TouchableOpacity
+              style={[styles.seenButton, isSelectedEpisodeSeen ? styles.seenButtonActive : styles.seenButtonInactive]}
+              onPress={toggleSelectedEpisodeSeen}
+              activeOpacity={0.9}
+            >
+              <Text style={styles.seenButtonText}>{isSelectedEpisodeSeen ? 'Visto' : 'No visto'}</Text>
             </TouchableOpacity>
           </View>
 
@@ -455,6 +478,26 @@ const styles = StyleSheet.create({
   },
   secondaryButtonText: {
     color: SimpsonPalette.black,
+    fontWeight: '900',
+  },
+  seenButton: {
+    borderRadius: 12,
+    borderWidth: 2,
+    paddingVertical: 10,
+    paddingHorizontal: 14,
+    minWidth: 96,
+    alignItems: 'center',
+  },
+  seenButtonActive: {
+    backgroundColor: '#2E9E56',
+    borderColor: '#BFEBCF',
+  },
+  seenButtonInactive: {
+    backgroundColor: '#8A2A55',
+    borderColor: '#FFD2E8',
+  },
+  seenButtonText: {
+    color: '#fff',
     fontWeight: '900',
   },
   episodesCounter: {
