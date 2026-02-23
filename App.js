@@ -477,6 +477,7 @@ const styles = StyleSheet.create({
     color: SimpsonPalette.black,
     fontSize: 30,
     fontWeight: '900',
+    paddingTop: 30,
   },
   subtitle: {
     color: SimpsonPalette.navy,
@@ -488,7 +489,7 @@ const styles = StyleSheet.create({
     position: 'absolute',
     width: 94,
     height: 44,
-    borderRadius: 30,
+    borderRadius: 40,
     backgroundColor: SimpsonPalette.cloud,
     opacity: 0.9,
   },
@@ -506,6 +507,7 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'flex-end',
     paddingBottom: 28,
+    paddingTop: 130,
   },
   albumList: {
     paddingHorizontal: (width - ALBUM_CARD_WIDTH) / 2,
