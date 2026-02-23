@@ -1,11 +1,13 @@
 import { StatusBar } from 'expo-status-bar';
-import { useMemo, useRef, useState } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
+import * as FileSystem from 'expo-file-system/legacy';
 import {
   Animated,
   Dimensions,
   FlatList,
   Image,
   SafeAreaView,
+  ScrollView,
   StyleSheet,
   Text,
   TouchableOpacity,
@@ -39,26 +41,176 @@ const resolveAsset = (assetPath) => {
     return null;
   }
 
-  const direct = assetMap[assetPath];
-  if (direct) {
-    return direct;
+  const candidatePaths = [
+    assetPath,
+    `SIMPSONS_TV_ART/${assetPath}`,
+  ];
+
+  for (const candidate of candidatePaths) {
+    const direct = assetMap[candidate];
+    if (direct) {
+      return direct;
+    }
   }
 
-  const normalized = assetPath
-    .replace('Season_30_Icon.webp', 'Season_30_icon.webp')
-    .replace('Season_35_Icon.webp', 'Season_35_artwork.webp')
-    .toLowerCase();
+  const normalizedCandidates = candidatePaths.map((candidate) =>
+    candidate
+      .replace('Season_30_Icon.webp', 'Season_30_icon.webp')
+      .replace('Season_35_Icon.webp', 'Season_35_artwork.webp')
+      .toLowerCase()
+  );
 
-  return assetMapLower[normalized] || null;
+  for (const candidate of normalizedCandidates) {
+    if (assetMapLower[candidate]) {
+      return assetMapLower[candidate];
+    }
+  }
+
+  return null;
 };
 
 const DecorativeCloud = ({ style }) => <View style={[styles.cloud, style]} />;
 
+const SEEN_EPISODES_FILE_NAME = 'simpsons_seen_episodes.json';
+const SEEN_EPISODES_WEB_KEY = 'simpsons_seen_episodes';
+
+const getSeenEpisodesFileUri = () => {
+  const baseDir = FileSystem.documentDirectory || FileSystem.cacheDirectory;
+  return baseDir ? `${baseDir}${SEEN_EPISODES_FILE_NAME}` : null;
+};
+
+const ensureSeenEpisodesJsonExists = async () => {
+  const fileUri = getSeenEpisodesFileUri();
+  if (!fileUri) {
+    return null;
+  }
+
+  try {
+    const info = await FileSystem.getInfoAsync(fileUri);
+    if (!info.exists) {
+      await FileSystem.writeAsStringAsync(fileUri, '{}');
+    }
+    return fileUri;
+  } catch {
+    return null;
+  }
+};
+
+const readSeenEpisodesFromJson = async () => {
+  const fileUri = await ensureSeenEpisodesJsonExists();
+
+  if (fileUri) {
+    try {
+      const content = await FileSystem.readAsStringAsync(fileUri);
+      const parsed = JSON.parse(content || '{}');
+      return parsed && typeof parsed === 'object' ? parsed : {};
+    } catch {
+      // fallback to web storage below
+    }
+  }
+
+  if (typeof localStorage !== 'undefined') {
+    try {
+      const content = localStorage.getItem(SEEN_EPISODES_WEB_KEY);
+      const parsed = JSON.parse(content || '{}');
+      return parsed && typeof parsed === 'object' ? parsed : {};
+    } catch {
+      return {};
+    }
+  }
+
+  return {};
+};
+
+const writeSeenEpisodesToJson = async (seenEpisodes) => {
+  const serialized = JSON.stringify(seenEpisodes);
+  const fileUri = await ensureSeenEpisodesJsonExists();
+
+  if (fileUri) {
+    try {
+      await FileSystem.writeAsStringAsync(fileUri, serialized);
+      return;
+    } catch {
+      // fallback to web storage below
+    }
+  }
+
+  if (typeof localStorage !== 'undefined') {
+    try {
+      localStorage.setItem(SEEN_EPISODES_WEB_KEY, serialized);
+    } catch {
+      // ignore write errors
+    }
+  }
+};
+
 export default function App() {
-  const temporadas = Array.isArray(simpsons) ? simpsons : simpsons.temporadas || [];
+  const temporadas = useMemo(() => {
+    if (Array.isArray(simpsons)) {
+      return simpsons;
+    }
+
+    if (Array.isArray(simpsons?.temporadas)) {
+      return simpsons.temporadas;
+    }
+
+    if (Array.isArray(simpsons?.seasons)) {
+      return simpsons.seasons.map((season) => ({
+        temporada: season.temporada ?? season.id,
+        imagen: season.imagen ?? season.image,
+        capitulos: (season.capitulos || season.episodes || []).map((episode) => ({
+          codigo: episode.codigo ?? episode.id,
+          title: episode.title ?? episode.titulo,
+          duration: episode.duration,
+          airDate: episode.airDate,
+          imagen: episode.imagen ?? episode.image,
+          synopsis: episode.synopsis ?? episode.sinopsis,
+        })),
+      }));
+    }
+
+    return [];
+  }, []);
+
   const [screen, setScreen] = useState('seasons');
   const [selectedSeason, setSelectedSeason] = useState(0);
   const [selectedEpisode, setSelectedEpisode] = useState(null);
+  const [seenEpisodes, setSeenEpisodes] = useState({});
+  const [seenEpisodesLoaded, setSeenEpisodesLoaded] = useState(false);
+
+  useEffect(() => {
+    let cancelled = false;
+
+    const loadSeenEpisodes = async () => {
+      const storedSeenEpisodes = await readSeenEpisodesFromJson();
+      if (!cancelled) {
+        setSeenEpisodes(storedSeenEpisodes);
+        setSeenEpisodesLoaded(true);
+      }
+    };
+
+    loadSeenEpisodes();
+
+    return () => {
+      cancelled = true;
+    };
+  }, []);
+
+  useEffect(() => {
+    if (!seenEpisodesLoaded) {
+      return;
+    }
+
+    writeSeenEpisodesToJson(seenEpisodes);
+  }, [seenEpisodes, seenEpisodesLoaded]);
+
+  const updateSeenEpisodes = (updater) => {
+    setSeenEpisodes((prev) => {
+      const next = typeof updater === 'function' ? updater(prev) : updater;
+      writeSeenEpisodesToJson(next);
+      return next;
+    });
+  };
   const scrollX = useRef(new Animated.Value(0)).current;
   const seasonListRef = useRef(null);
 
@@ -88,6 +240,20 @@ export default function App() {
 
   const closeEpisodeDetail = () => {
     setScreen('episodes');
+  };
+
+  const selectedEpisodeCode = selectedEpisode?.codigo || selectedEpisode?.id || '';
+  const isSelectedEpisodeSeen = Boolean(selectedEpisodeCode && seenEpisodes[selectedEpisodeCode]);
+
+  const toggleSelectedEpisodeSeen = () => {
+    if (!selectedEpisodeCode) {
+      return;
+    }
+
+    updateSeenEpisodes((prev) => ({
+      ...prev,
+      [selectedEpisodeCode]: !prev[selectedEpisodeCode],
+    }));
   };
 
   return (
@@ -185,7 +351,7 @@ export default function App() {
         <>
           <View style={styles.header}>
             <Text style={styles.title}>Capítulos T{temporadaActiva?.temporada}</Text>
-            <Text style={styles.subtitle}>Fotos cuadradas estilo álbum</Text>
+            <Text style={styles.subtitle}></Text>
           </View>
 
           <View style={styles.episodesActionsRow}>
@@ -240,43 +406,57 @@ export default function App() {
             <TouchableOpacity style={styles.secondaryButton} onPress={closeEpisodeDetail} activeOpacity={0.9}>
               <Text style={styles.secondaryButtonText}>← Volver a capítulos</Text>
             </TouchableOpacity>
+
+            <TouchableOpacity
+              style={[styles.seenButton, isSelectedEpisodeSeen ? styles.seenButtonActive : styles.seenButtonInactive]}
+              onPress={toggleSelectedEpisodeSeen}
+              activeOpacity={0.9}
+            >
+              <Text style={styles.seenButtonText}>{isSelectedEpisodeSeen ? 'Visto' : 'No visto'}</Text>
+            </TouchableOpacity>
           </View>
 
-          <View style={styles.detailCard}>
-            <View style={styles.detailContent}>
-              <Text style={styles.detailTitle}>{selectedEpisode?.title || selectedEpisode?.titulo || selectedEpisode?.codigo || 'Sin título'}</Text>
-            </View>
+          <ScrollView
+            style={styles.detailScroll}
+            contentContainerStyle={styles.detailScrollContent}
+            showsVerticalScrollIndicator={false}
+          >
+            <View style={styles.detailCard}>
+              <View style={styles.detailContent}>
+                <Text style={styles.detailTitle}>{selectedEpisode?.title || selectedEpisode?.titulo || selectedEpisode?.codigo || 'Sin título'}</Text>
+              </View>
 
-            <View style={styles.detailImageWrap}>
-              {selectedEpisode && resolveAsset(selectedEpisode.imagen) ? (
-                <Image
-                  source={resolveAsset(selectedEpisode.imagen)}
-                  style={styles.detailImage}
-                  resizeMode="contain"
-                />
-              ) : (
-                <View style={[styles.detailImage, styles.fallbackImage]}>
-                  <Text style={styles.fallbackText}>{selectedEpisode?.codigo ?? 'Sin imagen'}</Text>
+              <View style={styles.detailImageWrap}>
+                {selectedEpisode && resolveAsset(selectedEpisode.imagen) ? (
+                  <Image
+                    source={resolveAsset(selectedEpisode.imagen)}
+                    style={styles.detailImage}
+                    resizeMode="contain"
+                  />
+                ) : (
+                  <View style={[styles.detailImage, styles.fallbackImage]}>
+                    <Text style={styles.fallbackText}>{selectedEpisode?.codigo ?? 'Sin imagen'}</Text>
+                  </View>
+                )}
+
+                <View style={styles.durationBadge}>
+                  <Text style={styles.durationText}>{selectedEpisode?.duration ?? '-'}</Text>
                 </View>
-              )}
-
-              <View style={styles.durationBadge}>
-                <Text style={styles.durationText}>{selectedEpisode?.duration ?? '-'}</Text>
-              </View>
-            </View>
-
-            <View style={styles.detailContent}>
-              <View style={styles.metaRow}>
-                <Text style={styles.metaLabel}>Air date: {selectedEpisode?.airDate ?? '-'}</Text>
               </View>
 
-              <Text style={styles.detailDescription}>{selectedEpisode?.synopsis || selectedEpisode?.sinopsis || ''}</Text>
+              <View style={styles.detailContent}>
+                <View style={styles.metaRow}>
+                  <Text style={styles.metaLabel}>Air date: {selectedEpisode?.airDate ?? '-'}</Text>
+                </View>
 
-              <TouchableOpacity style={styles.playButton} activeOpacity={0.9}>
-                <Text style={styles.playButtonText}>Reproducir en Raspberry</Text>
-              </TouchableOpacity>
+                <Text style={styles.detailDescription}>{selectedEpisode?.synopsis || selectedEpisode?.sinopsis || ''}</Text>
+
+                <TouchableOpacity style={styles.playButton} activeOpacity={0.9}>
+                  <Text style={styles.playButtonText}>Reproducir en Raspberry</Text>
+                </TouchableOpacity>
+              </View>
             </View>
-          </View>
+          </ScrollView>
         </>
       )}
     </SafeAreaView>
@@ -297,6 +477,7 @@ const styles = StyleSheet.create({
     color: SimpsonPalette.black,
     fontSize: 30,
     fontWeight: '900',
+    paddingTop: 30,
   },
   subtitle: {
     color: SimpsonPalette.navy,
@@ -308,7 +489,7 @@ const styles = StyleSheet.create({
     position: 'absolute',
     width: 94,
     height: 44,
-    borderRadius: 30,
+    borderRadius: 40,
     backgroundColor: SimpsonPalette.cloud,
     opacity: 0.9,
   },
@@ -326,6 +507,7 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'flex-end',
     paddingBottom: 28,
+    paddingTop: 130,
   },
   albumList: {
     paddingHorizontal: (width - ALBUM_CARD_WIDTH) / 2,
@@ -409,6 +591,26 @@ const styles = StyleSheet.create({
     color: SimpsonPalette.black,
     fontWeight: '900',
   },
+  seenButton: {
+    borderRadius: 12,
+    borderWidth: 2,
+    paddingVertical: 10,
+    paddingHorizontal: 14,
+    minWidth: 96,
+    alignItems: 'center',
+  },
+  seenButtonActive: {
+    backgroundColor: '#2E9E56',
+    borderColor: '#BFEBCF',
+  },
+  seenButtonInactive: {
+    backgroundColor: '#8A2A55',
+    borderColor: '#FFD2E8',
+  },
+  seenButtonText: {
+    color: '#fff',
+    fontWeight: '900',
+  },
   episodesCounter: {
     color: SimpsonPalette.navy,
     fontWeight: '800',
@@ -450,6 +652,12 @@ const styles = StyleSheet.create({
     color: '#fff',
     fontWeight: '900',
     letterSpacing: 0.5,
+  },
+  detailScroll: {
+    flex: 1,
+  },
+  detailScrollContent: {
+    paddingBottom: 24,
   },
   detailCard: {
     marginHorizontal: 16,
