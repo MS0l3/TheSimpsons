@@ -351,7 +351,7 @@ export default function App() {
         <>
           <View style={styles.header}>
             <Text style={styles.title}>Capítulos T{temporadaActiva?.temporada}</Text>
-            <Text style={styles.subtitle}>Fotos cuadradas estilo álbum</Text>
+            <Text style={styles.subtitle}></Text>
           </View>
 
           <View style={styles.episodesActionsRow}>
