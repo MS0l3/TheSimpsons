@@ -1,6 +1,6 @@
 import { StatusBar } from 'expo-status-bar';
 import { useEffect, useMemo, useRef, useState } from 'react';
-import * as FileSystem from 'expo-file-system';
+import * as FileSystem from 'expo-file-system/legacy';
 import {
   Animated,
   Dimensions,
@@ -140,6 +140,7 @@ export default function App() {
   const [selectedSeason, setSelectedSeason] = useState(0);
   const [selectedEpisode, setSelectedEpisode] = useState(null);
   const [seenEpisodes, setSeenEpisodes] = useState({});
+  const [seenEpisodesLoaded, setSeenEpisodesLoaded] = useState(false);
 
   useEffect(() => {
     let cancelled = false;
@@ -148,6 +149,7 @@ export default function App() {
       const storedSeenEpisodes = await readSeenEpisodesFromJson();
       if (!cancelled) {
         setSeenEpisodes(storedSeenEpisodes);
+        setSeenEpisodesLoaded(true);
       }
     };
 
@@ -159,8 +161,12 @@ export default function App() {
   }, []);
 
   useEffect(() => {
+    if (!seenEpisodesLoaded) {
+      return;
+    }
+
     writeSeenEpisodesToJson(seenEpisodes);
-  }, [seenEpisodes]);
+  }, [seenEpisodes, seenEpisodesLoaded]);
   const scrollX = useRef(new Animated.Value(0)).current;
   const seasonListRef = useRef(null);
 
