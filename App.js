@@ -72,39 +72,75 @@ const resolveAsset = (assetPath) => {
 const DecorativeCloud = ({ style }) => <View style={[styles.cloud, style]} />;
 
 const SEEN_EPISODES_FILE_NAME = 'simpsons_seen_episodes.json';
-const SEEN_EPISODES_FILE_URI = `${FileSystem.documentDirectory}${SEEN_EPISODES_FILE_NAME}`;
+const SEEN_EPISODES_WEB_KEY = 'simpsons_seen_episodes';
+
+const getSeenEpisodesFileUri = () => {
+  const baseDir = FileSystem.documentDirectory || FileSystem.cacheDirectory;
+  return baseDir ? `${baseDir}${SEEN_EPISODES_FILE_NAME}` : null;
+};
 
 const ensureSeenEpisodesJsonExists = async () => {
+  const fileUri = getSeenEpisodesFileUri();
+  if (!fileUri) {
+    return null;
+  }
+
   try {
-    const info = await FileSystem.getInfoAsync(SEEN_EPISODES_FILE_URI);
+    const info = await FileSystem.getInfoAsync(fileUri);
     if (!info.exists) {
-      await FileSystem.writeAsStringAsync(SEEN_EPISODES_FILE_URI, '{}');
+      await FileSystem.writeAsStringAsync(fileUri, '{}');
     }
+    return fileUri;
   } catch {
-    // ignore initialization errors
+    return null;
   }
 };
 
 const readSeenEpisodesFromJson = async () => {
-  try {
-    await ensureSeenEpisodesJsonExists();
-    const content = await FileSystem.readAsStringAsync(SEEN_EPISODES_FILE_URI);
-    const parsed = JSON.parse(content || '{}');
-    return parsed && typeof parsed === 'object' ? parsed : {};
-  } catch {
-    return {};
+  const fileUri = await ensureSeenEpisodesJsonExists();
+
+  if (fileUri) {
+    try {
+      const content = await FileSystem.readAsStringAsync(fileUri);
+      const parsed = JSON.parse(content || '{}');
+      return parsed && typeof parsed === 'object' ? parsed : {};
+    } catch {
+      // fallback to web storage below
+    }
   }
+
+  if (typeof localStorage !== 'undefined') {
+    try {
+      const content = localStorage.getItem(SEEN_EPISODES_WEB_KEY);
+      const parsed = JSON.parse(content || '{}');
+      return parsed && typeof parsed === 'object' ? parsed : {};
+    } catch {
+      return {};
+    }
+  }
+
+  return {};
 };
 
 const writeSeenEpisodesToJson = async (seenEpisodes) => {
-  try {
-    await ensureSeenEpisodesJsonExists();
-    await FileSystem.writeAsStringAsync(
-      SEEN_EPISODES_FILE_URI,
-      JSON.stringify(seenEpisodes)
-    );
-  } catch {
-    // ignore write errors
+  const serialized = JSON.stringify(seenEpisodes);
+  const fileUri = await ensureSeenEpisodesJsonExists();
+
+  if (fileUri) {
+    try {
+      await FileSystem.writeAsStringAsync(fileUri, serialized);
+      return;
+    } catch {
+      // fallback to web storage below
+    }
+  }
+
+  if (typeof localStorage !== 'undefined') {
+    try {
+      localStorage.setItem(SEEN_EPISODES_WEB_KEY, serialized);
+    } catch {
+      // ignore write errors
+    }
   }
 };
 
@@ -167,6 +203,14 @@ export default function App() {
 
     writeSeenEpisodesToJson(seenEpisodes);
   }, [seenEpisodes, seenEpisodesLoaded]);
+
+  const updateSeenEpisodes = (updater) => {
+    setSeenEpisodes((prev) => {
+      const next = typeof updater === 'function' ? updater(prev) : updater;
+      writeSeenEpisodesToJson(next);
+      return next;
+    });
+  };
   const scrollX = useRef(new Animated.Value(0)).current;
   const seasonListRef = useRef(null);
 
@@ -206,7 +250,7 @@ export default function App() {
       return;
     }
 
-    setSeenEpisodes((prev) => ({
+    updateSeenEpisodes((prev) => ({
       ...prev,
       [selectedEpisodeCode]: !prev[selectedEpisodeCode],
     }));
